@@ -6,12 +6,9 @@ import { IApiResponse } from '../../interfaces/IApiResponse';
  * DummyJsonClient - API client for DummyJSON API
  */
 export class DummyJsonClient extends BaseApiClient {
-  protected baseURL: string;
-
   constructor() {
-    super();
     const env = EnvironmentManager.getInstance();
-    this.baseURL = env.getDummyJsonApiUrl();
+    super(env.getDummyJsonApiUrl());
   }
 
   /**

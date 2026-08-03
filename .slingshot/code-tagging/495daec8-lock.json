@@ -1,0 +1,60 @@
+{
+  "src\\api\\clients\\PetstoreClient.ts": {
+    "filename": "PetstoreClient.ts",
+    "path": "src\\api\\clients\\PetstoreClient.ts",
+    "version": "1.2",
+    "contextFile": "495daec8-context.json",
+    "chunks": {
+      "44467c": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785777399,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "0b14beba"
+        },
+        "hash": "2ffe0d05",
+        "messageId": "system_de905f10-8f5d-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/3/2026, 10:46:39 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "7": {
+        "chunkId": "44467c",
+        "hash": "0834fa2b",
+        "encoded": "export%20class%20PetstoreClient%20extends%20BaseApiClient%20%7B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "44467c",
+        "hash": "42eaf4fa",
+        "encoded": "constructor()%20%7B",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "44467c",
+        "hash": "1829bcc7",
+        "encoded": "const%20env%20=%20EnvironmentManager.getInstance();",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "44467c",
+        "hash": "1082bc17",
+        "encoded": "super(env.getPetstoreApiUrl());",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "44467c",
+        "hash": "e9a9f96c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

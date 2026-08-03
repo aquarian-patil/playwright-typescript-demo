@@ -8,10 +8,11 @@ import { IApiResponse, IApiError } from '../interfaces/IApiResponse';
 export abstract class BaseApiClient {
   protected client: AxiosInstance;
   protected logger: Logger;
-  protected abstract baseURL: string;
+  protected baseURL: string;
 
-  constructor(timeout: number = 30000) {
+  constructor(baseURL: string, timeout: number = 30000) {
     this.logger = Logger.getInstance();
+    this.baseURL = baseURL;
     this.client = this.createClient(timeout);
     this.setupInterceptors();
   }

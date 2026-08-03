@@ -1,0 +1,15 @@
+{
+  "filename": "DummyJsonClient.ts",
+  "path": "src\\api\\clients\\DummyJsonClient.ts",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "0b14beba": {
+      "value": "yes please"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

@@ -1,0 +1,144 @@
+{
+  "src\\api\\BaseApiClient.ts": {
+    "filename": "BaseApiClient.ts",
+    "path": "src\\api\\BaseApiClient.ts",
+    "version": "1.2",
+    "contextFile": "ca2ec37c-context.json",
+    "chunks": {
+      "4b5b9c": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785777342,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "0b14beba"
+        },
+        "hash": "18f2e1ae",
+        "messageId": "system_de905f10-8f5d-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/3/2026, 10:45:42 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "7": {
+        "chunkId": "4b5b9c",
+        "hash": "2d32149e",
+        "encoded": "export%20abstract%20class%20BaseApiClient%20%7B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "4b5b9c",
+        "hash": "c861bb3a",
+        "encoded": "protected%20client:%20AxiosInstance;",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "4b5b9c",
+        "hash": "17e9db35",
+        "encoded": "protected%20logger:%20Logger;",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "4b5b9c",
+        "hash": "86f2a943",
+        "encoded": "protected%20baseURL:%20string;",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "4b5b9c",
+        "hash": "af31c0a0",
+        "encoded": "constructor(baseURL:%20string,%20timeout:%20number%20=%2030000)%20%7B",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "4b5b9c",
+        "hash": "56e14539",
+        "encoded": "this.logger%20=%20Logger.getInstance();",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "4b5b9c",
+        "hash": "94d36f8d",
+        "encoded": "this.baseURL%20=%20baseURL;",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "4b5b9c",
+        "hash": "1e55f428",
+        "encoded": "this.client%20=%20this.createClient(timeout);",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "4b5b9c",
+        "hash": "57bf3d74",
+        "encoded": "this.setupInterceptors();",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "4b5b9c",
+        "hash": "76477189",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "4b5b9c",
+        "hash": "867d9548",
+        "encoded": "private%20createClient(timeout:%20number):%20AxiosInstance%20%7B",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "4b5b9c",
+        "hash": "502c6f04",
+        "encoded": "return%20axios.create(%7B",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "4b5b9c",
+        "hash": "d2e0cbf1",
+        "encoded": "baseURL:%20this.baseURL,",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "4b5b9c",
+        "hash": "acd36d3e",
+        "encoded": "timeout,",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "4b5b9c",
+        "hash": "5ccaf2a5",
+        "encoded": "headers:%20%7B",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "4b5b9c",
+        "hash": "23581974",
+        "encoded": "'Content-Type':%20'application/json',",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "4b5b9c",
+        "hash": "642c1a07",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "4b5b9c",
+        "hash": "1ca2ca1b",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "4b5b9c",
+        "hash": "a7947416",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

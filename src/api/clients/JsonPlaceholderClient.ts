@@ -6,12 +6,9 @@ import { IApiResponse } from '../../interfaces/IApiResponse';
  * JsonPlaceholderClient - API client for JSONPlaceholder API
  */
 export class JsonPlaceholderClient extends BaseApiClient {
-  protected baseURL: string;
-
   constructor() {
-    super();
     const env = EnvironmentManager.getInstance();
-    this.baseURL = env.getJsonPlaceholderApiUrl();
+    super(env.getJsonPlaceholderApiUrl());
   }
 
   // Posts

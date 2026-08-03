@@ -6,12 +6,9 @@ import { IApiResponse } from '../../interfaces/IApiResponse';
  * ReqResClient - API client for ReqRes API
  */
 export class ReqResClient extends BaseApiClient {
-  protected baseURL: string;
-
   constructor() {
-    super();
     const env = EnvironmentManager.getInstance();
-    this.baseURL = env.getReqResApiUrl();
+    super(env.getReqResApiUrl());
     
     // Add API key if available
     const apiKey = env.getReqResApiKey();

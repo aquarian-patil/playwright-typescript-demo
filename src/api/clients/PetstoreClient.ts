@@ -6,12 +6,9 @@ import { IApiResponse } from '../../interfaces/IApiResponse';
  * PetstoreClient - API client for Swagger Petstore API
  */
 export class PetstoreClient extends BaseApiClient {
-  protected baseURL: string;
-
   constructor() {
-    super();
     const env = EnvironmentManager.getInstance();
-    this.baseURL = env.getPetstoreApiUrl();
+    super(env.getPetstoreApiUrl());
   }
 
   // Pet operations

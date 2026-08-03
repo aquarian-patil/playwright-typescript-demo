@@ -22,93 +22,172 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/3/2026, 10:39:33 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "87e5aa": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785777400,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "0b14beba"
+        },
+        "hash": "b40fdabf",
+        "messageId": "system_de905f10-8f5d-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/3/2026, 10:46:40 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
-      "15": {
-        "chunkId": "ec93a0",
-        "hash": "4bd7c76b",
+      "7": {
+        "chunkId": "87e5aa",
+        "hash": "3c29d937",
         "encoded": "export%20class%20ReqResClient%20extends%20BaseApiClient%20%7B",
         "prevChunkIds": []
       },
-      "16": {
-        "chunkId": "ec93a0",
-        "hash": "83658015",
-        "encoded": "protected%20baseURL:%20string;",
-        "prevChunkIds": []
-      },
-      "17": {
-        "chunkId": "ec93a0",
-        "hash": "c619c6a7",
-        "encoded": "private%20env:%20EnvironmentManager;",
-        "prevChunkIds": []
-      },
-      "19": {
-        "chunkId": "ec93a0",
-        "hash": "d78a86bf",
+      "8": {
+        "chunkId": "87e5aa",
+        "hash": "42eaf4fa",
         "encoded": "constructor()%20%7B",
         "prevChunkIds": []
       },
-      "20": {
-        "chunkId": "ec93a0",
-        "hash": "984d185d",
-        "encoded": "super();",
+      "9": {
+        "chunkId": "87e5aa",
+        "hash": "1829bcc7",
+        "encoded": "const%20env%20=%20EnvironmentManager.getInstance();",
         "prevChunkIds": []
       },
-      "21": {
-        "chunkId": "ec93a0",
-        "hash": "e1e55b21",
-        "encoded": "this.env%20=%20EnvironmentManager.getInstance();",
+      "10": {
+        "chunkId": "87e5aa",
+        "hash": "d4f29eb2",
+        "encoded": "super(env.getReqResApiUrl());",
         "prevChunkIds": []
       },
-      "22": {
-        "chunkId": "ec93a0",
-        "hash": "e046bffd",
-        "encoded": "this.baseURL%20=%20this.env.getReqResApiUrl();",
+      "12": {
+        "chunkId": "87e5aa",
+        "hash": "1531fd3b",
+        "encoded": "//%20Add%20API%20key%20if%20available",
         "prevChunkIds": []
       },
-      "23": {
-        "chunkId": "ec93a0",
-        "hash": "7664ffd7",
-        "encoded": "this.client.defaults.baseURL%20=%20this.baseURL;",
+      "13": {
+        "chunkId": "87e5aa",
+        "hash": "07d1d901",
+        "encoded": "const%20apiKey%20=%20env.getReqResApiKey();",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "87e5aa",
+        "hash": "543b8342",
+        "encoded": "if%20(apiKey)%20%7B",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "87e5aa",
+        "hash": "b3c9ac0e",
+        "encoded": "this.client.defaults.headers.common%5B'x-api-key'%5D%20=%20apiKey;",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "87e5aa",
+        "hash": "0a373349",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "87e5aa",
+        "hash": "76477189",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "25": {
         "chunkId": "ec93a0",
-        "hash": "bb3c1f6b",
-        "encoded": "//%20Add%20API%20key%20header%20if%20available",
+        "hash": "fc0dca0f",
+        "encoded": "export%20class%20ReqResClient%20extends%20BaseApiClient%20%7B",
         "prevChunkIds": []
       },
       "26": {
         "chunkId": "ec93a0",
-        "hash": "669940f1",
-        "encoded": "const%20apiKey%20=%20this.env.getReqResApiKey();",
+        "hash": "7e3741f2",
+        "encoded": "protected%20baseURL:%20string;",
         "prevChunkIds": []
       },
       "27": {
         "chunkId": "ec93a0",
-        "hash": "d23a785a",
-        "encoded": "if%20(apiKey)%20%7B",
-        "prevChunkIds": []
-      },
-      "28": {
-        "chunkId": "ec93a0",
-        "hash": "1e71b5d2",
-        "encoded": "this.client.defaults.headers.common%5B'x-api-key'%5D%20=%20apiKey;",
+        "hash": "405f4f70",
+        "encoded": "private%20env:%20EnvironmentManager;",
         "prevChunkIds": []
       },
       "29": {
         "chunkId": "ec93a0",
-        "hash": "7721e417",
-        "encoded": "%7D",
+        "hash": "fd67817e",
+        "encoded": "constructor()%20%7B",
         "prevChunkIds": []
       },
       "30": {
         "chunkId": "ec93a0",
-        "hash": "cfdac52c",
+        "hash": "e4a7fa43",
+        "encoded": "super();",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "ec93a0",
+        "hash": "831a5338",
+        "encoded": "this.env%20=%20EnvironmentManager.getInstance();",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "ec93a0",
+        "hash": "012f423b",
+        "encoded": "this.baseURL%20=%20this.env.getReqResApiUrl();",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "ec93a0",
+        "hash": "679754ef",
+        "encoded": "this.client.defaults.baseURL%20=%20this.baseURL;",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "ec93a0",
+        "hash": "3862c400",
+        "encoded": "//%20Add%20API%20key%20header%20if%20available",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "ec93a0",
+        "hash": "f3c63a75",
+        "encoded": "const%20apiKey%20=%20this.env.getReqResApiKey();",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "ec93a0",
+        "hash": "8c39ffc4",
+        "encoded": "if%20(apiKey)%20%7B",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "ec93a0",
+        "hash": "21fae0ef",
+        "encoded": "this.client.defaults.headers.common%5B'x-api-key'%5D%20=%20apiKey;",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "ec93a0",
+        "hash": "4771cdac",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "ec93a0",
+        "hash": "792377b1",
         "encoded": "%7D",
         "prevChunkIds": []
       }
-    }
+    },
+    "_prevLineCount": 62
   }
 }

@@ -1,0 +1,60 @@
+{
+  "src\\api\\clients\\DummyJsonClient.ts": {
+    "filename": "DummyJsonClient.ts",
+    "path": "src\\api\\clients\\DummyJsonClient.ts",
+    "version": "1.2",
+    "contextFile": "702e9c45-context.json",
+    "chunks": {
+      "66252f": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785777398,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "0b14beba"
+        },
+        "hash": "e8b94850",
+        "messageId": "system_de905f10-8f5d-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/3/2026, 10:46:38 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "7": {
+        "chunkId": "66252f",
+        "hash": "e56eb269",
+        "encoded": "export%20class%20DummyJsonClient%20extends%20BaseApiClient%20%7B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "66252f",
+        "hash": "42eaf4fa",
+        "encoded": "constructor()%20%7B",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "66252f",
+        "hash": "1829bcc7",
+        "encoded": "const%20env%20=%20EnvironmentManager.getInstance();",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "66252f",
+        "hash": "592d9f9b",
+        "encoded": "super(env.getDummyJsonApiUrl());",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "66252f",
+        "hash": "e9a9f96c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
