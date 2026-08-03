@@ -1,0 +1,210 @@
+{
+  "README.md": {
+    "filename": "README.md",
+    "path": "README.md",
+    "version": "1.2",
+    "contextFile": "7d7ba11e-context.json",
+    "chunks": {
+      "5cc597": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785777162,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "0b14beba"
+        },
+        "hash": "b17ee15a",
+        "messageId": "system_de905f10-8f5d-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/3/2026, 10:42:42 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "54f902": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785777162,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "0b14beba"
+        },
+        "hash": "83ab5e16",
+        "messageId": "system_de905f10-8f5d-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/3/2026, 10:42:42 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "63": {
+        "chunkId": "5cc597",
+        "hash": "63428013",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20api/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20API%20clients%20(60%20tests)",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "5cc597",
+        "hash": "4f568047",
+        "encoded": "%E2%94%82%20%20%20%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20BaseApiClient.ts%20%20%20%20%20%20#%20Axios-based%20client",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "5cc597",
+        "hash": "f08228d3",
+        "encoded": "%E2%94%82%20%20%20%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20clients/",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "5cc597",
+        "hash": "0cfff029",
+        "encoded": "%E2%94%82%20%20%20%E2%94%82%20%20%20%20%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20DummyJsonClient.ts%20%20%20%20%20%20%20#%2010%20tests",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "5cc597",
+        "hash": "c7ece5fc",
+        "encoded": "%E2%94%82%20%20%20%E2%94%82%20%20%20%20%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20JsonPlaceholderClient.ts%20#%2025%20tests",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "5cc597",
+        "hash": "3c341fd5",
+        "encoded": "%E2%94%82%20%20%20%E2%94%82%20%20%20%20%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20PetstoreClient.ts%20%20%20%20%20%20%20%20#%2020%20tests",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "5cc597",
+        "hash": "a71c1144",
+        "encoded": "%E2%94%82%20%20%20%E2%94%82%20%20%20%20%20%20%20%E2%94%94%E2%94%80%E2%94%80%20ReqResClient.ts%20%20%20%20%20%20%20%20%20%20#%206%20tests",
+        "prevChunkIds": []
+      },
+      "495": {
+        "chunkId": "54f902",
+        "hash": "10c08d76",
+        "encoded": "##%20%F0%9F%93%9A%20Documentation",
+        "prevChunkIds": []
+      },
+      "497": {
+        "chunkId": "54f902",
+        "hash": "cffc84e9",
+        "encoded": "###%20Test%20Results%20&%20Fixes",
+        "prevChunkIds": []
+      },
+      "499": {
+        "chunkId": "54f902",
+        "hash": "215af173",
+        "encoded": "Recent%20test%20execution%20analysis%20and%20fixes:",
+        "prevChunkIds": []
+      },
+      "500": {
+        "chunkId": "54f902",
+        "hash": "4e403be6",
+        "encoded": "-%20**UI%20Tests**:%2093%25+%20pass%20rate%20(14/15%20passing,%201%20flaky)",
+        "prevChunkIds": []
+      },
+      "501": {
+        "chunkId": "54f902",
+        "hash": "bd68c352",
+        "encoded": "-%20**API%20Tests**:%20100%25%20coverage%20(4/4%20APIs%20implemented)",
+        "prevChunkIds": []
+      },
+      "502": {
+        "chunkId": "54f902",
+        "hash": "80717674",
+        "encoded": "-%20**Fixes%20Applied**:%20Navigation%20timeouts,%20dashboard%20detection,%20property%20conflicts",
+        "prevChunkIds": []
+      },
+      "504": {
+        "chunkId": "54f902",
+        "hash": "c0f0c4f8",
+        "encoded": "See%20%60docs/TEST_FAILURE_FIXES_SUMMARY.md%60%20for%20detailed%20UI%20test%20fixes.",
+        "prevChunkIds": []
+      },
+      "506": {
+        "chunkId": "54f902",
+        "hash": "c251de91",
+        "encoded": "###%20API%20Testing%20Guide",
+        "prevChunkIds": []
+      },
+      "508": {
+        "chunkId": "54f902",
+        "hash": "daa51379",
+        "encoded": "For%20comprehensive%20API%20testing%20documentation:",
+        "prevChunkIds": []
+      },
+      "509": {
+        "chunkId": "54f902",
+        "hash": "20c9251e",
+        "encoded": "-%20Quick%20commands%20and%20troubleshooting",
+        "prevChunkIds": []
+      },
+      "510": {
+        "chunkId": "54f902",
+        "hash": "32b92585",
+        "encoded": "-%20Test%20categories%20and%20coverage",
+        "prevChunkIds": []
+      },
+      "511": {
+        "chunkId": "54f902",
+        "hash": "601be8e4",
+        "encoded": "-%20Client%20usage%20examples",
+        "prevChunkIds": []
+      },
+      "512": {
+        "chunkId": "54f902",
+        "hash": "21c98ae2",
+        "encoded": "-%20CI/CD%20integration",
+        "prevChunkIds": []
+      },
+      "514": {
+        "chunkId": "54f902",
+        "hash": "8b49a0c9",
+        "encoded": "###%20Environment%20Setup",
+        "prevChunkIds": []
+      },
+      "516": {
+        "chunkId": "54f902",
+        "hash": "962ef66d",
+        "encoded": "All%20API%20tests%20work%20without%20configuration!%20Default%20values%20are%20provided.",
+        "prevChunkIds": []
+      },
+      "518": {
+        "chunkId": "54f902",
+        "hash": "cbbb364a",
+        "encoded": "Optional:%20To%20enable%20ReqRes%20tests,%20add%20to%20%60.env%60:",
+        "prevChunkIds": []
+      },
+      "519": {
+        "chunkId": "54f902",
+        "hash": "ce945fb6",
+        "encoded": "%60%60%60env",
+        "prevChunkIds": []
+      },
+      "520": {
+        "chunkId": "54f902",
+        "hash": "b6b219df",
+        "encoded": "REQRES_API_KEY=your_api_key_here",
+        "prevChunkIds": []
+      },
+      "521": {
+        "chunkId": "54f902",
+        "hash": "2d37a4fb",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "523": {
+        "chunkId": "54f902",
+        "hash": "366255a0",
+        "encoded": "Get%20free%20API%20key:%20https://app.reqres.in/api-keys",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

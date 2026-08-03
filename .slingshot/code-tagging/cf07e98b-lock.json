@@ -1,0 +1,114 @@
+{
+  "src\\api\\clients\\ReqResClient.ts": {
+    "filename": "ReqResClient.ts",
+    "path": "src\\api\\clients\\ReqResClient.ts",
+    "version": "1.2",
+    "contextFile": "cf07e98b-context.json",
+    "chunks": {
+      "ec93a0": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785776973,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "0b14beba"
+        },
+        "hash": "aff120ff",
+        "messageId": "system_de905f10-8f5d-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/3/2026, 10:39:33 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "15": {
+        "chunkId": "ec93a0",
+        "hash": "4bd7c76b",
+        "encoded": "export%20class%20ReqResClient%20extends%20BaseApiClient%20%7B",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "ec93a0",
+        "hash": "83658015",
+        "encoded": "protected%20baseURL:%20string;",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "ec93a0",
+        "hash": "c619c6a7",
+        "encoded": "private%20env:%20EnvironmentManager;",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "ec93a0",
+        "hash": "d78a86bf",
+        "encoded": "constructor()%20%7B",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "ec93a0",
+        "hash": "984d185d",
+        "encoded": "super();",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "ec93a0",
+        "hash": "e1e55b21",
+        "encoded": "this.env%20=%20EnvironmentManager.getInstance();",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "ec93a0",
+        "hash": "e046bffd",
+        "encoded": "this.baseURL%20=%20this.env.getReqResApiUrl();",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "ec93a0",
+        "hash": "7664ffd7",
+        "encoded": "this.client.defaults.baseURL%20=%20this.baseURL;",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "ec93a0",
+        "hash": "bb3c1f6b",
+        "encoded": "//%20Add%20API%20key%20header%20if%20available",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "ec93a0",
+        "hash": "669940f1",
+        "encoded": "const%20apiKey%20=%20this.env.getReqResApiKey();",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "ec93a0",
+        "hash": "d23a785a",
+        "encoded": "if%20(apiKey)%20%7B",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "ec93a0",
+        "hash": "1e71b5d2",
+        "encoded": "this.client.defaults.headers.common%5B'x-api-key'%5D%20=%20apiKey;",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "ec93a0",
+        "hash": "7721e417",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "ec93a0",
+        "hash": "cfdac52c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

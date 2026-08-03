@@ -1,0 +1,15 @@
+{
+  "filename": "BasePage.ts",
+  "path": "src\\base\\BasePage.ts",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "31e277c3": {
+      "value": "looks like something has happened. I think i have lost all files while doing something to checkin into git. could u pls check and fix the issue?"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

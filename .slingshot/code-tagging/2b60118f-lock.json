@@ -1,0 +1,72 @@
+{
+  "tests\\api\\reqres.spec.ts": {
+    "filename": "reqres.spec.ts",
+    "path": "tests\\api\\reqres.spec.ts",
+    "version": "1.2",
+    "contextFile": "2b60118f-context.json",
+    "chunks": {
+      "419960": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785777162,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "0b14beba"
+        },
+        "hash": "eb036857",
+        "messageId": "system_de905f10-8f5d-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/3/2026, 10:42:42 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "419960",
+        "hash": "d7f647af",
+        "encoded": "import%20%7B%20test,%20expect%20%7D%20from%20'../../src/fixtures/baseFixtures';",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "419960",
+        "hash": "03a33b99",
+        "encoded": "import%20%7B%20EnvironmentManager%20%7D%20from%20'../../src/config/EnvironmentManager';",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "419960",
+        "hash": "b1253da8",
+        "encoded": "const%20env%20=%20EnvironmentManager.getInstance();",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "419960",
+        "hash": "1353d6b5",
+        "encoded": "const%20hasApiKey%20=%20!!env.getReqResApiKey();",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "419960",
+        "hash": "75dc31e1",
+        "encoded": "//%20Skip%20tests%20if%20no%20API%20key%20is%20configured",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "419960",
+        "hash": "ee87a251",
+        "encoded": "test.describe('ReqRes%20API%20Tests',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "419960",
+        "hash": "5199c905",
+        "encoded": "test.skip(!hasApiKey,%20'Skipping%20ReqRes%20tests%20-%20API%20key%20not%20configured.%20Get%20your%20free%20API%20key%20from%20https://app.reqres.in/api-keys');",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

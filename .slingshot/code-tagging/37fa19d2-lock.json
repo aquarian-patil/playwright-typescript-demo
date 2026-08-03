@@ -1,0 +1,120 @@
+{
+  "src\\pages\\orangehrm\\LoginPage.ts": {
+    "filename": "LoginPage.ts",
+    "path": "src\\pages\\orangehrm\\LoginPage.ts",
+    "version": "1.2",
+    "contextFile": "37fa19d2-context.json",
+    "chunks": {
+      "f2ad2a": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785776927,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "0b14beba"
+        },
+        "hash": "c341d886",
+        "messageId": "system_de905f10-8f5d-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/3/2026, 10:38:47 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "64": {
+        "chunkId": "f2ad2a",
+        "hash": "3b5f5052",
+        "encoded": "async%20isErrorDisplayed():%20Promise%3Cboolean%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "f2ad2a",
+        "hash": "600031dc",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "f2ad2a",
+        "hash": "d5a9b114",
+        "encoded": "//%20Wait%20a%20bit%20for%20the%20error%20to%20appear%20after%20login%20attempt",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "f2ad2a",
+        "hash": "89b7d3f0",
+        "encoded": "await%20this.page.waitForTimeout(1000);",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "f2ad2a",
+        "hash": "951cdc30",
+        "encoded": "const%20isVisible%20=%20await%20this.isVisible(this.errorMessage,%2010000);",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "f2ad2a",
+        "hash": "0a4b0ba9",
+        "encoded": "if%20(isVisible)%20%7B",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "f2ad2a",
+        "hash": "644c3af4",
+        "encoded": "const%20errorText%20=%20await%20this.getErrorMessage();",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "f2ad2a",
+        "hash": "2f5e5213",
+        "encoded": "this.logger.info(%60Error%20message%20displayed:%20$%7BerrorText%7D%60);",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "f2ad2a",
+        "hash": "ae47b750",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "f2ad2a",
+        "hash": "4d252ba3",
+        "encoded": "return%20isVisible;",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "f2ad2a",
+        "hash": "119a795b",
+        "encoded": "%7D%20catch%20(error)%20%7B",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "f2ad2a",
+        "hash": "df010830",
+        "encoded": "this.logger.warn(%60Error%20message%20check%20failed:%20$%7Berror%7D%60);",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "f2ad2a",
+        "hash": "d2583c75",
+        "encoded": "return%20false;",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "f2ad2a",
+        "hash": "20d59727",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "f2ad2a",
+        "hash": "c46ffadb",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

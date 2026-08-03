@@ -1,0 +1,102 @@
+{
+  "tests\\api\\dummyjson.spec.ts": {
+    "filename": "dummyjson.spec.ts",
+    "path": "tests\\api\\dummyjson.spec.ts",
+    "version": "1.2",
+    "contextFile": "5b04d67c-context.json",
+    "chunks": {
+      "c521cf": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785777022,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "0b14beba"
+        },
+        "hash": "e12ae952",
+        "messageId": "system_de905f10-8f5d-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/3/2026, 10:40:22 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "187": {
+        "chunkId": "c521cf",
+        "hash": "36c7ea76",
+        "encoded": "test('should%20handle%20non-existent%20user%20ID%20gracefully',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "c521cf",
+        "hash": "415d8a1c",
+        "encoded": "const%20nonExistentId%20=%20999999;",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "c521cf",
+        "hash": "0bbd09d7",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "c521cf",
+        "hash": "613d1853",
+        "encoded": "await%20client.getUserById(nonExistentId);",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "c521cf",
+        "hash": "9cd2fd45",
+        "encoded": "//%20If%20no%20error%20is%20thrown,%20fail%20the%20test",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "c521cf",
+        "hash": "def86290",
+        "encoded": "expect(true).toBe(false);",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "c521cf",
+        "hash": "aa19603d",
+        "encoded": "%7D%20catch%20(error:%20any)%20%7B",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "c521cf",
+        "hash": "a20c6345",
+        "encoded": "//%20Expect%20404%20error%20for%20non-existent%20user",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "c521cf",
+        "hash": "905f4a27",
+        "encoded": "expect(error.status).toBe(404);",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "c521cf",
+        "hash": "3567985d",
+        "encoded": "expect(error.error).toHaveProperty('message');",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "c521cf",
+        "hash": "7cf402bb",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "c521cf",
+        "hash": "37555f08",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

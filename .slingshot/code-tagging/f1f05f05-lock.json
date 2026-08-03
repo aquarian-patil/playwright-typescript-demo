@@ -1,0 +1,114 @@
+{
+  "src\\base\\BasePage.ts": {
+    "filename": "BasePage.ts",
+    "path": "src\\base\\BasePage.ts",
+    "version": "1.2",
+    "contextFile": "f1f05f05-context.json",
+    "chunks": {
+      "c8c108": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785776854,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "31e277c3"
+        },
+        "hash": "348d6d76",
+        "messageId": "system_c839e7b0-8f5b-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/3/2026, 10:37:34 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "51": {
+        "chunkId": "c8c108",
+        "hash": "09dfcb49",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "c8c108",
+        "hash": "1051433f",
+        "encoded": "*%20Wait%20for%20page%20to%20be%20fully%20loaded",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "c8c108",
+        "hash": "b6b41ee9",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "c8c108",
+        "hash": "5c14faaa",
+        "encoded": "async%20waitForPageLoad():%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "c8c108",
+        "hash": "8aff99a8",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "c8c108",
+        "hash": "e0407386",
+        "encoded": "await%20this.page.waitForLoadState('networkidle',%20%7B%20timeout:%2030000%20%7D);",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "c8c108",
+        "hash": "57edb182",
+        "encoded": "this.logger.info('Page%20loaded%20successfully');",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "c8c108",
+        "hash": "3acc7ca8",
+        "encoded": "%7D%20catch%20(error)%20%7B",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "c8c108",
+        "hash": "de3c8133",
+        "encoded": "//%20If%20networkidle%20times%20out,%20check%20if%20page%20is%20at%20least%20loaded",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "c8c108",
+        "hash": "e30c0437",
+        "encoded": "this.logger.warn('Network%20idle%20timeout,%20checking%20if%20page%20is%20loaded...');",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "c8c108",
+        "hash": "009fbc52",
+        "encoded": "await%20this.page.waitForLoadState('load',%20%7B%20timeout:%2010000%20%7D);",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "c8c108",
+        "hash": "90d910ed",
+        "encoded": "this.logger.info('Page%20loaded%20(without%20network%20idle)');",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "c8c108",
+        "hash": "78db855a",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "c8c108",
+        "hash": "48dc6fe2",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

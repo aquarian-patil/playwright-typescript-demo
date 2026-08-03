@@ -1,0 +1,54 @@
+{
+  "src\\pages\\saucedemo\\ProductsPage.ts": {
+    "filename": "ProductsPage.ts",
+    "path": "src\\pages\\saucedemo\\ProductsPage.ts",
+    "version": "1.2",
+    "contextFile": "699fc013-context.json",
+    "chunks": {
+      "4435cf": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785776904,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "0b14beba"
+        },
+        "hash": "e6d5bcc6",
+        "messageId": "system_de905f10-8f5d-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/3/2026, 10:38:24 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "36": {
+        "chunkId": "4435cf",
+        "hash": "eb6e06b8",
+        "encoded": "//%20Actions",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "4435cf",
+        "hash": "bea32e18",
+        "encoded": "async%20isProductsPageDisplayed():%20Promise%3Cboolean%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "4435cf",
+        "hash": "8b4ede3b",
+        "encoded": "return%20await%20this.isVisible(this.pageTitleElement);",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "4435cf",
+        "hash": "4771cdac",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

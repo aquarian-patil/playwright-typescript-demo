@@ -1,0 +1,31 @@
+{
+  "filename": "tsconfig.json",
+  "path": "tsconfig.json",
+  "version": "1.1",
+  "files": {
+    "3af32603": {
+      "value": [
+        {
+          "programming_language": "JSON",
+          "fileName": "tsconfig.json",
+          "relativeFilePath": "tsconfig.json",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            95
+          ]
+        }
+      ]
+    }
+  },
+  "promptMessage": {
+    "a436c5f9": {
+      "value": "i still error in line 44"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}
