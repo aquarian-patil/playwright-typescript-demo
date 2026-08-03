@@ -1,0 +1,27 @@
+{
+  "name": "playwright-typescript-demo",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "index.js",
+  "scripts": {
+  "test": "playwright test",
+  "test:ui-only": "playwright test tests/ui",
+  "test:api-only": "playwright test tests/api",
+  "test:headed": "playwright test --headed",
+  "test:interactive": "playwright test --ui",
+  "report": "playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://pscode.lioncloud.net/nitpatil/playwright-typescript-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.1.2",
+    "typescript": "^7.0.2"
+  }
+}
