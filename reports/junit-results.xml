@@ -1,0 +1,517 @@
+<testsuites id="" name="" tests="62" failures="0" skipped="8" errors="0" time="45.233023">
+<testsuite name="api\dummyjson.spec.ts" timestamp="2026-08-03T16:39:42.911Z" hostname="chromium" tests="10" failures="0" skipped="0" time="9.846" errors="0">
+<testcase name="DummyJSON API Tests › Authentication › should login with valid credentials" classname="api\dummyjson.spec.ts" time="2.89">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-dummyjson-DummyJSON-AP-5d0ce-ogin-with-valid-credentials-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="DummyJSON API Tests › Authentication › should fail login with invalid credentials" classname="api\dummyjson.spec.ts" time="0.373">
+<system-out>
+<![CDATA[2026-08-03 22:09:48 [[31merror[39m]: [RESPONSE ERROR] 400 - Bad Request
+
+[[ATTACHMENT|..\test-results\api-dummyjson-DummyJSON-AP-b03da-in-with-invalid-credentials-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="DummyJSON API Tests › Products API › should get list of products" classname="api\dummyjson.spec.ts" time="0.04">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-dummyjson-DummyJSON-AP-26e5e-should-get-list-of-products-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="DummyJSON API Tests › Products API › should get product by ID" classname="api\dummyjson.spec.ts" time="1.798">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-dummyjson-DummyJSON-AP-d4fba-PI-should-get-product-by-ID-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="DummyJSON API Tests › Products API › should handle non-existent product ID gracefully" classname="api\dummyjson.spec.ts" time="0.293">
+<system-out>
+<![CDATA[2026-08-03 22:09:47 [[31merror[39m]: [RESPONSE ERROR] 404 - Not Found
+
+[[ATTACHMENT|..\test-results\api-dummyjson-DummyJSON-AP-058bd-stent-product-ID-gracefully-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="DummyJSON API Tests › Products API › should search products by query" classname="api\dummyjson.spec.ts" time="0.281">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-dummyjson-DummyJSON-AP-c5f2c-ld-search-products-by-query-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="DummyJSON API Tests › Products API › should return empty array for non-matching search query" classname="api\dummyjson.spec.ts" time="1.905">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-dummyjson-DummyJSON-AP-e556e-r-non-matching-search-query-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="DummyJSON API Tests › Users API › should get list of users" classname="api\dummyjson.spec.ts" time="0.05">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-dummyjson-DummyJSON-AP-5d0b1-PI-should-get-list-of-users-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="DummyJSON API Tests › Users API › should get user by ID" classname="api\dummyjson.spec.ts" time="0.269">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-dummyjson-DummyJSON-AP-47b11-s-API-should-get-user-by-ID-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="DummyJSON API Tests › Users API › should handle non-existent user ID gracefully" classname="api\dummyjson.spec.ts" time="1.947">
+<system-out>
+<![CDATA[2026-08-03 22:09:47 [[31merror[39m]: [RESPONSE ERROR] 404 - Not Found
+
+[[ATTACHMENT|..\test-results\api-dummyjson-DummyJSON-AP-6f8dd-existent-user-ID-gracefully-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="api\jsonplaceholder.spec.ts" timestamp="2026-08-03T16:39:42.911Z" hostname="chromium" tests="20" failures="0" skipped="0" time="11.591" errors="0">
+<testcase name="JSONPlaceholder API Tests › Posts API - CRUD Operations › should get list of posts" classname="api\jsonplaceholder.spec.ts" time="1.617">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-22bd4-ns-should-get-list-of-posts-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Posts API - CRUD Operations › should get post by ID" classname="api\jsonplaceholder.spec.ts" time="0.032">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-d45d5-tions-should-get-post-by-ID-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Posts API - CRUD Operations › should create a new post" classname="api\jsonplaceholder.spec.ts" time="0.589">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-28dc3-ns-should-create-a-new-post-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Posts API - CRUD Operations › should update a post (PUT)" classname="api\jsonplaceholder.spec.ts" time="0.611">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-b18c1-s-should-update-a-post-PUT--chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Posts API - CRUD Operations › should partially update a post (PATCH)" classname="api\jsonplaceholder.spec.ts" time="0.219">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-3409d-tially-update-a-post-PATCH--chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Posts API - CRUD Operations › should delete a post" classname="api\jsonplaceholder.spec.ts" time="2.167">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-d5f5c-ations-should-delete-a-post-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Posts API - CRUD Operations › should get comments for a post" classname="api\jsonplaceholder.spec.ts" time="0.746">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-4f4e1-uld-get-comments-for-a-post-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Comments API › should get all comments" classname="api\jsonplaceholder.spec.ts" time="0.053">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-11e71-API-should-get-all-comments-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Comments API › should get comment by ID" classname="api\jsonplaceholder.spec.ts" time="0.052">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-08130-PI-should-get-comment-by-ID-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Comments API › should get comments by post ID using query parameter" classname="api\jsonplaceholder.spec.ts" time="0.667">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-81cfa-st-ID-using-query-parameter-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Users API › should get all users" classname="api\jsonplaceholder.spec.ts" time="1.603">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-68ff7-rs-API-should-get-all-users-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Users API › should get user by ID" classname="api\jsonplaceholder.spec.ts" time="0.04">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-ba69e-s-API-should-get-user-by-ID-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Users API › should get posts by user" classname="api\jsonplaceholder.spec.ts" time="0.76">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-23fdc-PI-should-get-posts-by-user-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Todos API › should get all todos" classname="api\jsonplaceholder.spec.ts" time="0.033">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-60aa6-os-API-should-get-all-todos-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Todos API › should get todo by ID" classname="api\jsonplaceholder.spec.ts" time="0.034">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-8d020-s-API-should-get-todo-by-ID-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Todos API › should get todos by user ID" classname="api\jsonplaceholder.spec.ts" time="1.569">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-5bbe5-should-get-todos-by-user-ID-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Todos API › should create a new todo" classname="api\jsonplaceholder.spec.ts" time="0.635">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-0ac2d-PI-should-create-a-new-todo-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Albums API › should get all albums" classname="api\jsonplaceholder.spec.ts" time="0.037">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-1802d-s-API-should-get-all-albums-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Albums API › should get album by ID" classname="api\jsonplaceholder.spec.ts" time="0.034">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-713da--API-should-get-album-by-ID-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="JSONPlaceholder API Tests › Albums API › should get photos from an album" classname="api\jsonplaceholder.spec.ts" time="0.093">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-jsonplaceholder-JSONPl-d733a-ld-get-photos-from-an-album-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="api\petstore.spec.ts" timestamp="2026-08-03T16:39:42.911Z" hostname="chromium" tests="21" failures="0" skipped="2" time="14.341" errors="0">
+<testcase name="Swagger Petstore API Tests › Pet API - CRUD Operations › should add a new pet to the store" classname="api\petstore.spec.ts" time="2.448">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-50008--add-a-new-pet-to-the-store-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › Pet API - CRUD Operations › should get pet by ID" classname="api\petstore.spec.ts" time="0.438">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-f857d-ations-should-get-pet-by-ID-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › Pet API - CRUD Operations › should find pets by status - available" classname="api\petstore.spec.ts" time="0.523">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-2ccef--pets-by-status---available-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › Pet API - CRUD Operations › should find pets by status - pending" classname="api\petstore.spec.ts" time="0.226">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-92613-nd-pets-by-status---pending-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › Pet API - CRUD Operations › should find pets by status - sold" classname="api\petstore.spec.ts" time="0.284">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-58279--find-pets-by-status---sold-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › Pet API - CRUD Operations › should update an existing pet" classname="api\petstore.spec.ts" time="0.676">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-fb76c-ould-update-an-existing-pet-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › Pet API - CRUD Operations › should handle non-existent pet ID gracefully" classname="api\petstore.spec.ts" time="2.409">
+<system-out>
+<![CDATA[2026-08-03 22:09:53 [[31merror[39m]: [RESPONSE ERROR] 404 - Not Found
+
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-c03d5--existent-pet-ID-gracefully-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › Pet API - CRUD Operations › should delete a pet" classname="api\petstore.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Swagger Petstore API Tests › Store API - Inventory and Orders › should get store inventory" classname="api\petstore.spec.ts" time="0.225">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-e7d18--should-get-store-inventory-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › Store API - Inventory and Orders › should place an order for a pet" classname="api\petstore.spec.ts" time="0.224">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-72157-ld-place-an-order-for-a-pet-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › Store API - Inventory and Orders › should get order by ID" classname="api\petstore.spec.ts" time="0.441">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-146d6-ders-should-get-order-by-ID-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › Store API - Inventory and Orders › should handle invalid order ID gracefully" classname="api\petstore.spec.ts" time="0.23">
+<system-out>
+<![CDATA[2026-08-03 22:09:55 [[31merror[39m]: [RESPONSE ERROR] 404 - Not Found
+
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-9b87e-invalid-order-ID-gracefully-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › Store API - Inventory and Orders › should delete an order" classname="api\petstore.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Swagger Petstore API Tests › User API - User Management › should create a new user" classname="api\petstore.spec.ts" time="2.43">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-3b163-nt-should-create-a-new-user-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › User API - User Management › should get user by username" classname="api\petstore.spec.ts" time="0.229">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-a0a62-should-get-user-by-username-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › User API - User Management › should login user" classname="api\petstore.spec.ts" time="0.226">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-b1173-anagement-should-login-user-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › User API - User Management › should logout user" classname="api\petstore.spec.ts" time="0.233">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-34460-nagement-should-logout-user-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › User API - User Management › should update user" classname="api\petstore.spec.ts" time="0.226">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-11abb-nagement-should-update-user-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › User API - User Management › should create multiple users with array" classname="api\petstore.spec.ts" time="2.419">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-6e9a0-e-multiple-users-with-array-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › User API - User Management › should handle non-existent user gracefully" classname="api\petstore.spec.ts" time="0.228">
+<system-out>
+<![CDATA[2026-08-03 22:09:54 [[31merror[39m]: [RESPONSE ERROR] 404 - Not Found
+
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-72cfd-on-existent-user-gracefully-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Swagger Petstore API Tests › User API - User Management › should delete user" classname="api\petstore.spec.ts" time="0.223">
+<system-out>
+<![CDATA[2026-08-03 22:09:54 [[31merror[39m]: [RESPONSE ERROR] 404 - Not Found
+
+[[ATTACHMENT|..\test-results\api-petstore-Swagger-Petst-0c4c8-nagement-should-delete-user-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="api\reqres.spec.ts" timestamp="2026-08-03T16:39:42.911Z" hostname="chromium" tests="6" failures="0" skipped="6" time="0" errors="0">
+<testcase name="ReqRes API Tests › should get list of users" classname="api\reqres.spec.ts">
+<properties>
+<property name="skip" value="Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="ReqRes API Tests › should get single user by ID" classname="api\reqres.spec.ts">
+<properties>
+<property name="skip" value="Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="ReqRes API Tests › should create new user" classname="api\reqres.spec.ts">
+<properties>
+<property name="skip" value="Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="ReqRes API Tests › should update user" classname="api\reqres.spec.ts">
+<properties>
+<property name="skip" value="Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="ReqRes API Tests › should delete user" classname="api\reqres.spec.ts">
+<properties>
+<property name="skip" value="Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="ReqRes API Tests › should login successfully" classname="api\reqres.spec.ts">
+<properties>
+<property name="skip" value="Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="ui\orangehrm\login.spec.ts" timestamp="2026-08-03T16:39:42.911Z" hostname="chromium" tests="3" failures="0" skipped="0" time="66.517" errors="0">
+<testcase name="OrangeHRM Login Tests › should login successfully with valid credentials" classname="ui\orangehrm\login.spec.ts" time="22.008">
+<system-out>
+<![CDATA[2026-08-03 22:10:01 [[32minfo[39m]: Navigating to https://opensource-demo.orangehrmlive.com
+2026-08-03 22:10:13 [[32minfo[39m]: Page loaded successfully
+2026-08-03 22:10:13 [[32minfo[39m]: Logging in as: Admin
+2026-08-03 22:10:18 [[32minfo[39m]: Page loaded successfully
+2026-08-03 22:10:18 [[32minfo[39m]: Dashboard displayed successfully
+
+[[ATTACHMENT|..\test-results\ui-orangehrm-login-OrangeH-dd7e8-ully-with-valid-credentials-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\ui-orangehrm-login-OrangeH-dd7e8-ully-with-valid-credentials-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\ui-orangehrm-login-OrangeH-dd7e8-ully-with-valid-credentials-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="OrangeHRM Login Tests › should display error with invalid credentials" classname="ui\orangehrm\login.spec.ts" time="21.027">
+<system-out>
+<![CDATA[2026-08-03 22:10:02 [[32minfo[39m]: Navigating to https://opensource-demo.orangehrmlive.com
+2026-08-03 22:10:13 [[32minfo[39m]: Page loaded successfully
+2026-08-03 22:10:13 [[32minfo[39m]: Logging in as: invalid
+2026-08-03 22:10:15 [[32minfo[39m]: Page loaded successfully
+2026-08-03 22:10:16 [[32minfo[39m]: Error message displayed: Invalid credentials
+
+[[ATTACHMENT|..\test-results\ui-orangehrm-login-OrangeH-d9501-or-with-invalid-credentials-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\ui-orangehrm-login-OrangeH-d9501-or-with-invalid-credentials-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\ui-orangehrm-login-OrangeH-d9501-or-with-invalid-credentials-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="OrangeHRM Login Tests › should logout successfully" classname="ui\orangehrm\login.spec.ts" time="23.482">
+<system-out>
+<![CDATA[2026-08-03 22:10:01 [[32minfo[39m]: Navigating to https://opensource-demo.orangehrmlive.com
+2026-08-03 22:10:12 [[32minfo[39m]: Page loaded successfully
+2026-08-03 22:10:12 [[32minfo[39m]: Navigating to https://opensource-demo.orangehrmlive.com
+2026-08-03 22:10:14 [[32minfo[39m]: Page loaded successfully
+2026-08-03 22:10:14 [[32minfo[39m]: Logging in as: Admin
+2026-08-03 22:10:19 [[32minfo[39m]: Page loaded successfully
+2026-08-03 22:10:19 [[32minfo[39m]: Logging out
+2026-08-03 22:10:21 [[32minfo[39m]: Logout successful - redirected to login page
+
+[[ATTACHMENT|..\test-results\ui-orangehrm-login-OrangeH-f4cb9--should-logout-successfully-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\ui-orangehrm-login-OrangeH-f4cb9--should-logout-successfully-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\ui-orangehrm-login-OrangeH-f4cb9--should-logout-successfully-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui\saucedemo\e2e.spec.ts" timestamp="2026-08-03T16:39:42.911Z" hostname="chromium" tests="2" failures="0" skipped="0" time="26.242" errors="0">
+<testcase name="SauceDemo E2E Tests › should complete full purchase flow" classname="ui\saucedemo\e2e.spec.ts" time="15.803">
+<system-out>
+<![CDATA[2026-08-03 22:10:02 [[32minfo[39m]: Navigating to https://www.saucedemo.com
+2026-08-03 22:10:10 [[32minfo[39m]: Page loaded successfully
+2026-08-03 22:10:10 [[32minfo[39m]: Logging in as: standard_user
+2026-08-03 22:10:11 [[32minfo[39m]: Page loaded successfully
+2026-08-03 22:10:11 [[32minfo[39m]: Adding product to cart: Sauce Labs Backpack
+2026-08-03 22:10:11 [[32minfo[39m]: Adding product to cart: Sauce Labs Bike Light
+2026-08-03 22:10:11 [[32minfo[39m]: Removing item from cart: Sauce Labs Bike Light
+2026-08-03 22:10:11 [[32minfo[39m]: Filling checkout information
+2026-08-03 22:10:12 [[32minfo[39m]: Page loaded successfully
+2026-08-03 22:10:12 [[32minfo[39m]: Page loaded successfully
+
+[[ATTACHMENT|..\test-results\ui-saucedemo-e2e-SauceDemo-71ffe-complete-full-purchase-flow-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\ui-saucedemo-e2e-SauceDemo-71ffe-complete-full-purchase-flow-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\ui-saucedemo-e2e-SauceDemo-71ffe-complete-full-purchase-flow-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="SauceDemo E2E Tests › should add and remove products from cart" classname="ui\saucedemo\e2e.spec.ts" time="10.439">
+<system-out>
+<![CDATA[2026-08-03 22:10:16 [[32minfo[39m]: Navigating to https://www.saucedemo.com
+2026-08-03 22:10:24 [[32minfo[39m]: Page loaded successfully
+2026-08-03 22:10:24 [[32minfo[39m]: Logging in as: standard_user
+2026-08-03 22:10:24 [[32minfo[39m]: Page loaded successfully
+2026-08-03 22:10:24 [[32minfo[39m]: Adding product to cart: Sauce Labs Backpack
+2026-08-03 22:10:24 [[32minfo[39m]: Removing product from cart: Sauce Labs Backpack
+
+[[ATTACHMENT|..\test-results\ui-saucedemo-e2e-SauceDemo-f6247-d-remove-products-from-cart-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\ui-saucedemo-e2e-SauceDemo-f6247-d-remove-products-from-cart-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\ui-saucedemo-e2e-SauceDemo-f6247-d-remove-products-from-cart-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

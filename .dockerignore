@@ -1,0 +1,39 @@
+# Node modules
+node_modules
+npm-debug.log
+
+# Test artifacts
+test-results
+playwright-report
+allure-results
+allure-report
+screenshots
+videos
+traces
+logs
+reports
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist
+build
+
+# Misc
+*.log
+.cache

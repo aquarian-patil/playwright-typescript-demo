@@ -1,0 +1,6 @@
+2026-08-03 21:48:41 [info]: Navigating to https://www.saucedemo.com
+2026-08-03 21:48:48 [info]: Page loaded successfully
+2026-08-03 21:48:48 [info]: Logging in as: standard_user
+2026-08-03 21:48:49 [info]: Page loaded successfully
+2026-08-03 21:48:49 [info]: Adding product to cart: Sauce Labs Backpack
+2026-08-03 21:48:49 [info]: Removing product from cart: Sauce Labs Backpack

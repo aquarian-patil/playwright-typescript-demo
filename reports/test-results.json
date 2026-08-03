@@ -1,0 +1,3173 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=chromium"
+    ],
+    "configFile": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\playwright.config.ts",
+    "rootDir": "C:/Users/nitpatil/OneDrive - Publicis Groupe/Desktop/playwright-typescript-demo/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/nitpatil/OneDrive - Publicis Groupe/Desktop/playwright-typescript-demo/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/nitpatil/OneDrive - Publicis Groupe/Desktop/playwright-typescript-demo/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/nitpatil/OneDrive - Publicis Groupe/Desktop/playwright-typescript-demo/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/nitpatil/OneDrive - Publicis Groupe/Desktop/playwright-typescript-demo/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/nitpatil/OneDrive - Publicis Groupe/Desktop/playwright-typescript-demo/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/nitpatil/OneDrive - Publicis Groupe/Desktop/playwright-typescript-demo/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/nitpatil/OneDrive - Publicis Groupe/Desktop/playwright-typescript-demo/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "mobile-chrome",
+        "name": "mobile-chrome",
+        "testDir": "C:/Users/nitpatil/OneDrive - Publicis Groupe/Desktop/playwright-typescript-demo/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/nitpatil/OneDrive - Publicis Groupe/Desktop/playwright-typescript-demo/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "mobile-safari",
+        "name": "mobile-safari",
+        "testDir": "C:/Users/nitpatil/OneDrive - Publicis Groupe/Desktop/playwright-typescript-demo/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/nitpatil/OneDrive - Publicis Groupe/Desktop/playwright-typescript-demo/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "tablet-chrome",
+        "name": "tablet-chrome",
+        "testDir": "C:/Users/nitpatil/OneDrive - Publicis Groupe/Desktop/playwright-typescript-demo/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/nitpatil/OneDrive - Publicis Groupe/Desktop/playwright-typescript-demo/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "api",
+        "name": "api",
+        "testDir": "C:/Users/nitpatil/OneDrive - Publicis Groupe/Desktop/playwright-typescript-demo/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/api/**/*.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/test-results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "reports/junit-results.xml"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "outputFolder": "allure-results",
+          "detail": true,
+          "suiteTitle": true
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api\\dummyjson.spec.ts",
+      "file": "api/dummyjson.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "DummyJSON API Tests",
+          "file": "api/dummyjson.spec.ts",
+          "line": 19,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Authentication",
+              "file": "api/dummyjson.spec.ts",
+              "line": 28,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should login with valid credentials",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2890,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:45.125Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-dummyjson-DummyJSON-AP-5d0ce-ogin-with-valid-credentials-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1ea52951e49107b4aa9e-d5cc3cfd451f1cde3c58",
+                  "file": "api/dummyjson.spec.ts",
+                  "line": 29,
+                  "column": 9
+                },
+                {
+                  "title": "should fail login with invalid credentials",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 373,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "2026-08-03 22:09:48 [\u001b[31merror\u001b[39m]: [RESPONSE ERROR] 400 - Bad Request\r\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:48.300Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-dummyjson-DummyJSON-AP-b03da-in-with-invalid-credentials-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1ea52951e49107b4aa9e-dec9e4a2bfea6ecda4de",
+                  "file": "api/dummyjson.spec.ts",
+                  "line": 47,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Products API",
+              "file": "api/dummyjson.spec.ts",
+              "line": 63,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should get list of products",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 40,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:48.694Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-dummyjson-DummyJSON-AP-26e5e-should-get-list-of-products-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1ea52951e49107b4aa9e-43b593f017267b42ea15",
+                  "file": "api/dummyjson.spec.ts",
+                  "line": 64,
+                  "column": 9
+                },
+                {
+                  "title": "should get product by ID",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1798,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:45.042Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-dummyjson-DummyJSON-AP-d4fba-PI-should-get-product-by-ID-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1ea52951e49107b4aa9e-292ce6ce829abaa4ca90",
+                  "file": "api/dummyjson.spec.ts",
+                  "line": 85,
+                  "column": 9
+                },
+                {
+                  "title": "should handle non-existent product ID gracefully",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 293,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "2026-08-03 22:09:47 [\u001b[31merror\u001b[39m]: [RESPONSE ERROR] 404 - Not Found\r\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:47.112Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-dummyjson-DummyJSON-AP-058bd-stent-product-ID-gracefully-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1ea52951e49107b4aa9e-cb4b53ba3c412a012ddb",
+                  "file": "api/dummyjson.spec.ts",
+                  "line": 102,
+                  "column": 9
+                },
+                {
+                  "title": "should search products by query",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 281,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:47.423Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-dummyjson-DummyJSON-AP-c5f2c-ld-search-products-by-query-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1ea52951e49107b4aa9e-50011e268d1b736121f6",
+                  "file": "api/dummyjson.spec.ts",
+                  "line": 116,
+                  "column": 9
+                },
+                {
+                  "title": "should return empty array for non-matching search query",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 1905,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:45.254Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-dummyjson-DummyJSON-AP-e556e-r-non-matching-search-query-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1ea52951e49107b4aa9e-df73c846edcf2ecc5bbd",
+                  "file": "api/dummyjson.spec.ts",
+                  "line": 140,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Users API",
+              "file": "api/dummyjson.spec.ts",
+              "line": 151,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should get list of users",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 50,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:47.420Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-dummyjson-DummyJSON-AP-5d0b1-PI-should-get-list-of-users-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1ea52951e49107b4aa9e-79552a03cb96c8a215be",
+                  "file": "api/dummyjson.spec.ts",
+                  "line": 152,
+                  "column": 9
+                },
+                {
+                  "title": "should get user by ID",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 269,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:47.502Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-dummyjson-DummyJSON-AP-47b11-s-API-should-get-user-by-ID-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1ea52951e49107b4aa9e-a962906e41509a4e35e8",
+                  "file": "api/dummyjson.spec.ts",
+                  "line": 173,
+                  "column": 9
+                },
+                {
+                  "title": "should handle non-existent user ID gracefully",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 1947,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "2026-08-03 22:09:47 [\u001b[31merror\u001b[39m]: [RESPONSE ERROR] 404 - Not Found\r\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:45.300Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-dummyjson-DummyJSON-AP-6f8dd-existent-user-ID-gracefully-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1ea52951e49107b4aa9e-31a65b330bb4720e626b",
+                  "file": "api/dummyjson.spec.ts",
+                  "line": 188,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api\\jsonplaceholder.spec.ts",
+      "file": "api/jsonplaceholder.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "JSONPlaceholder API Tests",
+          "file": "api/jsonplaceholder.spec.ts",
+          "line": 19,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Posts API - CRUD Operations",
+              "file": "api/jsonplaceholder.spec.ts",
+              "line": 26,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should get list of posts",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 1617,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:47.553Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-22bd4-ns-should-get-list-of-posts-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-54378f747821f79b8e99",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 27,
+                  "column": 9
+                },
+                {
+                  "title": "should get post by ID",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 32,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:49.211Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-d45d5-tions-should-get-post-by-ID-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-4abb36f3463d451bb9bb",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 42,
+                  "column": 9
+                },
+                {
+                  "title": "should create a new post",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 589,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:49.261Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-28dc3-ns-should-create-a-new-post-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-b98c4582eae85c262efd",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 58,
+                  "column": 9
+                },
+                {
+                  "title": "should update a post (PUT)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 611,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:49.867Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-b18c1-s-should-update-a-post-PUT--chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-b4d0a7723e2e4358926a",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 77,
+                  "column": 9
+                },
+                {
+                  "title": "should partially update a post (PATCH)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 219,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:50.501Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-3409d-tially-update-a-post-PATCH--chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-c0f9bbee58e3af8327bb",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 94,
+                  "column": 9
+                },
+                {
+                  "title": "should delete a post",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2167,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:47.750Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-d5f5c-ations-should-delete-a-post-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-e8f6ff17f2c09ba732dd",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 110,
+                  "column": 9
+                },
+                {
+                  "title": "should get comments for a post",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 746,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:49.942Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-4f4e1-uld-get-comments-for-a-post-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-ed706705f417e632a61a",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 119,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Comments API",
+              "file": "api/jsonplaceholder.spec.ts",
+              "line": 142,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should get all comments",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 53,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:50.723Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-11e71-API-should-get-all-comments-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-c5b2caa065e5ad43ba25",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 143,
+                  "column": 9
+                },
+                {
+                  "title": "should get comment by ID",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 52,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:50.808Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-08130-PI-should-get-comment-by-ID-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-300a7d06bca3af8aca44",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 159,
+                  "column": 9
+                },
+                {
+                  "title": "should get comments by post ID using query parameter",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 667,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:50.913Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-81cfa-st-ID-using-query-parameter-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-ef6c7bedc69c402e553c",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 172,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Users API",
+              "file": "api/jsonplaceholder.spec.ts",
+              "line": 187,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should get all users",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 1603,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:47.819Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-68ff7-rs-API-should-get-all-users-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-67c5940566a3467e5524",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 188,
+                  "column": 9
+                },
+                {
+                  "title": "should get user by ID",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 40,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:49.448Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-ba69e-s-API-should-get-user-by-ID-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-29d11408c4a78caab3db",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 207,
+                  "column": 9
+                },
+                {
+                  "title": "should get posts by user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 760,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:49.508Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-23fdc-PI-should-get-posts-by-user-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-9481018414e822f83752",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 225,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Todos API",
+              "file": "api/jsonplaceholder.spec.ts",
+              "line": 240,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should get all todos",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 33,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:50.285Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-60aa6-os-API-should-get-all-todos-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-7a5617af3c1091f1441a",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 241,
+                  "column": 9
+                },
+                {
+                  "title": "should get todo by ID",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 34,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:50.337Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-8d020-s-API-should-get-todo-by-ID-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-db8688f4684860251468",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 257,
+                  "column": 9
+                },
+                {
+                  "title": "should get todos by user ID",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1569,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:48.777Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-5bbe5-should-get-todos-by-user-ID-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-8d64a65435b3f1038260",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 269,
+                  "column": 9
+                },
+                {
+                  "title": "should create a new todo",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 635,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:50.386Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-0ac2d-PI-should-create-a-new-todo-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-5b4cb8bcf0a4d1991a0c",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 283,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Albums API",
+              "file": "api/jsonplaceholder.spec.ts",
+              "line": 300,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should get all albums",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 37,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:51.055Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-1802d-s-API-should-get-all-albums-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-24c6cf0f1f7bc4e2cf98",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 301,
+                  "column": 9
+                },
+                {
+                  "title": "should get album by ID",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 34,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:51.122Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-713da--API-should-get-album-by-ID-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-4cf110cfa34c085b660b",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 315,
+                  "column": 9
+                },
+                {
+                  "title": "should get photos from an album",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 93,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:51.187Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-jsonplaceholder-JSONPl-d733a-ld-get-photos-from-an-album-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f8b9d5681d708c0ef901-33bfbf82b7fe64450580",
+                  "file": "api/jsonplaceholder.spec.ts",
+                  "line": 325,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api\\petstore.spec.ts",
+      "file": "api/petstore.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Swagger Petstore API Tests",
+          "file": "api/petstore.spec.ts",
+          "line": 19,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Pet API - CRUD Operations",
+              "file": "api/petstore.spec.ts",
+              "line": 30,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should add a new pet to the store",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 2448,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:50.834Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-50008--add-a-new-pet-to-the-store-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-699ad11e1ee55627eda4",
+                  "file": "api/petstore.spec.ts",
+                  "line": 31,
+                  "column": 9
+                },
+                {
+                  "title": "should get pet by ID",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 438,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:53.378Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-f857d-ations-should-get-pet-by-ID-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-c29cafe9287099296c5c",
+                  "file": "api/petstore.spec.ts",
+                  "line": 62,
+                  "column": 9
+                },
+                {
+                  "title": "should find pets by status - available",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 523,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:53.845Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-2ccef--pets-by-status---available-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-9b7a8ae636d7793e3f19",
+                  "file": "api/petstore.spec.ts",
+                  "line": 82,
+                  "column": 9
+                },
+                {
+                  "title": "should find pets by status - pending",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 226,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:54.391Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-92613-nd-pets-by-status---pending-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-f2d371168cedec508869",
+                  "file": "api/petstore.spec.ts",
+                  "line": 102,
+                  "column": 9
+                },
+                {
+                  "title": "should find pets by status - sold",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 284,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:54.649Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-58279--find-pets-by-status---sold-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-5ac5eeafabe615f97ce4",
+                  "file": "api/petstore.spec.ts",
+                  "line": 116,
+                  "column": 9
+                },
+                {
+                  "title": "should update an existing pet",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 676,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:54.969Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-fb76c-ould-update-an-existing-pet-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-5e8fcffb6408f023aac6",
+                  "file": "api/petstore.spec.ts",
+                  "line": 130,
+                  "column": 9
+                },
+                {
+                  "title": "should handle non-existent pet ID gracefully",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2409,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "2026-08-03 22:09:53 [\u001b[31merror\u001b[39m]: [RESPONSE ERROR] 404 - Not Found\r\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:51.344Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-c03d5--existent-pet-ID-gracefully-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-56db7fa6656cbe376c64",
+                  "file": "api/petstore.spec.ts",
+                  "line": 160,
+                  "column": 9
+                },
+                {
+                  "title": "should delete a pet",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\petstore.spec.ts",
+                            "line": 176,
+                            "column": 14
+                          }
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "skipped",
+                          "duration": 1,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:53.858Z",
+                          "annotations": [
+                            {
+                              "type": "skip",
+                              "location": {
+                                "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\petstore.spec.ts",
+                                "line": 176,
+                                "column": 14
+                              }
+                            }
+                          ],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-5d9dc-rations-should-delete-a-pet-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-f05ebee363a530030d98",
+                  "file": "api/petstore.spec.ts",
+                  "line": 173,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Store API - Inventory and Orders",
+              "file": "api/petstore.spec.ts",
+              "line": 190,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should get store inventory",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 225,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:53.877Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-e7d18--should-get-store-inventory-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-7c40e990190dcd7a024c",
+                  "file": "api/petstore.spec.ts",
+                  "line": 191,
+                  "column": 9
+                },
+                {
+                  "title": "should place an order for a pet",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 224,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:54.123Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-72157-ld-place-an-order-for-a-pet-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-b262cf7da76dd8fad89a",
+                  "file": "api/petstore.spec.ts",
+                  "line": 204,
+                  "column": 9
+                },
+                {
+                  "title": "should get order by ID",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 441,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:54.364Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-146d6-ders-should-get-order-by-ID-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-55f216c556cf6dfae08c",
+                  "file": "api/petstore.spec.ts",
+                  "line": 225,
+                  "column": 9
+                },
+                {
+                  "title": "should handle invalid order ID gracefully",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 230,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "2026-08-03 22:09:55 [\u001b[31merror\u001b[39m]: [RESPONSE ERROR] 404 - Not Found\r\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:54.834Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-9b87e-invalid-order-ID-gracefully-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-7b9fea3569ea6f87bf10",
+                  "file": "api/petstore.spec.ts",
+                  "line": 248,
+                  "column": 9
+                },
+                {
+                  "title": "should delete an order",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\petstore.spec.ts",
+                            "line": 264,
+                            "column": 14
+                          }
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "skipped",
+                          "duration": 2,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:51.804Z",
+                          "annotations": [
+                            {
+                              "type": "skip",
+                              "location": {
+                                "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\petstore.spec.ts",
+                                "line": 264,
+                                "column": 14
+                              }
+                            }
+                          ],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-e3dde-ders-should-delete-an-order-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-8114b6d389f506a9c196",
+                  "file": "api/petstore.spec.ts",
+                  "line": 261,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "User API - User Management",
+              "file": "api/petstore.spec.ts",
+              "line": 278,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should create a new user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2430,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:51.875Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-3b163-nt-should-create-a-new-user-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-7f6e1c047ea3f12b4f55",
+                  "file": "api/petstore.spec.ts",
+                  "line": 279,
+                  "column": 9
+                },
+                {
+                  "title": "should get user by username",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 229,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:54.329Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-a0a62-should-get-user-by-username-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-4d6128a31b671367b5dc",
+                  "file": "api/petstore.spec.ts",
+                  "line": 296,
+                  "column": 9
+                },
+                {
+                  "title": "should login user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 226,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:54.579Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-b1173-anagement-should-login-user-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-8de1a18b3a872f56098f",
+                  "file": "api/petstore.spec.ts",
+                  "line": 306,
+                  "column": 9
+                },
+                {
+                  "title": "should logout user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 233,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:54.833Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-34460-nagement-should-logout-user-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-3d1a6125cfe5b8227569",
+                  "file": "api/petstore.spec.ts",
+                  "line": 316,
+                  "column": 9
+                },
+                {
+                  "title": "should update user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 226,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:55.106Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-11abb-nagement-should-update-user-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-1430b65b56f2c0868dbb",
+                  "file": "api/petstore.spec.ts",
+                  "line": 323,
+                  "column": 9
+                },
+                {
+                  "title": "should create multiple users with array",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2419,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:52.062Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-6e9a0-e-multiple-users-with-array-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-c26032e8199ab5dc0ffa",
+                  "file": "api/petstore.spec.ts",
+                  "line": 339,
+                  "column": 9
+                },
+                {
+                  "title": "should handle non-existent user gracefully",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 228,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "2026-08-03 22:09:54 [\u001b[31merror\u001b[39m]: [RESPONSE ERROR] 404 - Not Found\r\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:54.519Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-72cfd-on-existent-user-gracefully-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-f49f69b89a2688797534",
+                  "file": "api/petstore.spec.ts",
+                  "line": 363,
+                  "column": 9
+                },
+                {
+                  "title": "should delete user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 223,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "2026-08-03 22:09:54 [\u001b[31merror\u001b[39m]: [RESPONSE ERROR] 404 - Not Found\r\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-03T16:39:54.768Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\api-petstore-Swagger-Petst-0c4c8-nagement-should-delete-user-chromium\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0bf6994081d62bbb0a54-ce654361dc24136515f2",
+                  "file": "api/petstore.spec.ts",
+                  "line": 376,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api\\reqres.spec.ts",
+      "file": "api/reqres.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "ReqRes API Tests",
+          "file": "api/reqres.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should get list of users",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys",
+                      "location": {
+                        "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\reqres.spec.ts",
+                        "line": 9,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-03T16:39:55.030Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys",
+                          "location": {
+                            "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\reqres.spec.ts",
+                            "line": 9,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "0573db6666d0d72eb310-1417758db8ccdf4901f3",
+              "file": "api/reqres.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "should get single user by ID",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys",
+                      "location": {
+                        "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\reqres.spec.ts",
+                        "line": 9,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-03T16:39:55.038Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys",
+                          "location": {
+                            "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\reqres.spec.ts",
+                            "line": 9,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "0573db6666d0d72eb310-d0783eb90657cbcfdc99",
+              "file": "api/reqres.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "should create new user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys",
+                      "location": {
+                        "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\reqres.spec.ts",
+                        "line": 9,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-03T16:39:55.045Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys",
+                          "location": {
+                            "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\reqres.spec.ts",
+                            "line": 9,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "0573db6666d0d72eb310-a56d154913535e16c2fd",
+              "file": "api/reqres.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "should update user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys",
+                      "location": {
+                        "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\reqres.spec.ts",
+                        "line": 9,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-03T16:39:55.100Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys",
+                          "location": {
+                            "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\reqres.spec.ts",
+                            "line": 9,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "0573db6666d0d72eb310-48aa167a74ee9d4ba9c4",
+              "file": "api/reqres.spec.ts",
+              "line": 44,
+              "column": 7
+            },
+            {
+              "title": "should delete user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys",
+                      "location": {
+                        "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\reqres.spec.ts",
+                        "line": 9,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-03T16:39:55.133Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys",
+                          "location": {
+                            "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\reqres.spec.ts",
+                            "line": 9,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "0573db6666d0d72eb310-fb270ca5dccb3ae576f4",
+              "file": "api/reqres.spec.ts",
+              "line": 58,
+              "column": 7
+            },
+            {
+              "title": "should login successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys",
+                      "location": {
+                        "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\reqres.spec.ts",
+                        "line": 9,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-03T16:39:55.143Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Skipping ReqRes tests - API key not configured. Get your free API key from https://app.reqres.in/api-keys",
+                          "location": {
+                            "file": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\tests\\api\\reqres.spec.ts",
+                            "line": 9,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "0573db6666d0d72eb310-facfe638d458b400f37e",
+              "file": "api/reqres.spec.ts",
+              "line": 64,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui\\orangehrm\\login.spec.ts",
+      "file": "ui/orangehrm/login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "OrangeHRM Login Tests",
+          "file": "ui/orangehrm/login.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should login successfully with valid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 22008,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "2026-08-03 22:10:01 [\u001b[32minfo\u001b[39m]: Navigating to https://opensource-demo.orangehrmlive.com\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:13 [\u001b[32minfo\u001b[39m]: Page loaded successfully\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:13 [\u001b[32minfo\u001b[39m]: Logging in as: Admin\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:18 [\u001b[32minfo\u001b[39m]: Page loaded successfully\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:18 [\u001b[32minfo\u001b[39m]: Dashboard displayed successfully\r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-03T16:39:55.251Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\ui-orangehrm-login-OrangeH-dd7e8-ully-with-valid-credentials-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\ui-orangehrm-login-OrangeH-dd7e8-ully-with-valid-credentials-chromium\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\ui-orangehrm-login-OrangeH-dd7e8-ully-with-valid-credentials-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1519c03c9c85684a491b-0e2a3950a4c8e56a0ea8",
+              "file": "ui/orangehrm/login.spec.ts",
+              "line": 8,
+              "column": 7
+            },
+            {
+              "title": "should display error with invalid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 21027,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "2026-08-03 22:10:02 [\u001b[32minfo\u001b[39m]: Navigating to https://opensource-demo.orangehrmlive.com\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:13 [\u001b[32minfo\u001b[39m]: Page loaded successfully\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:13 [\u001b[32minfo\u001b[39m]: Logging in as: invalid\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:15 [\u001b[32minfo\u001b[39m]: Page loaded successfully\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:16 [\u001b[32minfo\u001b[39m]: Error message displayed: Invalid credentials\r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-03T16:39:55.250Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\ui-orangehrm-login-OrangeH-d9501-or-with-invalid-credentials-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\ui-orangehrm-login-OrangeH-d9501-or-with-invalid-credentials-chromium\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\ui-orangehrm-login-OrangeH-d9501-or-with-invalid-credentials-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1519c03c9c85684a491b-6a46eccdfd9e40e1f2cc",
+              "file": "ui/orangehrm/login.spec.ts",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "should logout successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 23482,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "2026-08-03 22:10:01 [\u001b[32minfo\u001b[39m]: Navigating to https://opensource-demo.orangehrmlive.com\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:12 [\u001b[32minfo\u001b[39m]: Page loaded successfully\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:12 [\u001b[32minfo\u001b[39m]: Navigating to https://opensource-demo.orangehrmlive.com\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:14 [\u001b[32minfo\u001b[39m]: Page loaded successfully\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:14 [\u001b[32minfo\u001b[39m]: Logging in as: Admin\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:19 [\u001b[32minfo\u001b[39m]: Page loaded successfully\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:19 [\u001b[32minfo\u001b[39m]: Logging out\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:21 [\u001b[32minfo\u001b[39m]: Logout successful - redirected to login page\r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-03T16:39:55.499Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\ui-orangehrm-login-OrangeH-f4cb9--should-logout-successfully-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\ui-orangehrm-login-OrangeH-f4cb9--should-logout-successfully-chromium\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\ui-orangehrm-login-OrangeH-f4cb9--should-logout-successfully-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1519c03c9c85684a491b-919f487678b8885ed8c1",
+              "file": "ui/orangehrm/login.spec.ts",
+              "line": 28,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui\\saucedemo\\e2e.spec.ts",
+      "file": "ui/saucedemo/e2e.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "SauceDemo E2E Tests",
+          "file": "ui/saucedemo/e2e.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should complete full purchase flow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 15803,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "2026-08-03 22:10:02 [\u001b[32minfo\u001b[39m]: Navigating to https://www.saucedemo.com\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:10 [\u001b[32minfo\u001b[39m]: Page loaded successfully\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:10 [\u001b[32minfo\u001b[39m]: Logging in as: standard_user\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:11 [\u001b[32minfo\u001b[39m]: Page loaded successfully\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:11 [\u001b[32minfo\u001b[39m]: Adding product to cart: Sauce Labs Backpack\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:11 [\u001b[32minfo\u001b[39m]: Adding product to cart: Sauce Labs Bike Light\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:11 [\u001b[32minfo\u001b[39m]: Removing item from cart: Sauce Labs Bike Light\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:11 [\u001b[32minfo\u001b[39m]: Filling checkout information\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:12 [\u001b[32minfo\u001b[39m]: Page loaded successfully\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:12 [\u001b[32minfo\u001b[39m]: Page loaded successfully\r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-03T16:39:55.764Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\ui-saucedemo-e2e-SauceDemo-71ffe-complete-full-purchase-flow-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\ui-saucedemo-e2e-SauceDemo-71ffe-complete-full-purchase-flow-chromium\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\ui-saucedemo-e2e-SauceDemo-71ffe-complete-full-purchase-flow-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ba7697d303c533b60098-d7848b91be9908d6eb3d",
+              "file": "ui/saucedemo/e2e.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "should add and remove products from cart",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 10439,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "2026-08-03 22:10:16 [\u001b[32minfo\u001b[39m]: Navigating to https://www.saucedemo.com\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:24 [\u001b[32minfo\u001b[39m]: Page loaded successfully\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:24 [\u001b[32minfo\u001b[39m]: Logging in as: standard_user\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:24 [\u001b[32minfo\u001b[39m]: Page loaded successfully\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:24 [\u001b[32minfo\u001b[39m]: Adding product to cart: Sauce Labs Backpack\r\n"
+                        },
+                        {
+                          "text": "2026-08-03 22:10:24 [\u001b[32minfo\u001b[39m]: Removing product from cart: Sauce Labs Backpack\r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-03T16:40:15.133Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\ui-saucedemo-e2e-SauceDemo-f6247-d-remove-products-from-cart-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\ui-saucedemo-e2e-SauceDemo-f6247-d-remove-products-from-cart-chromium\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\nitpatil\\OneDrive - Publicis Groupe\\Desktop\\playwright-typescript-demo\\test-results\\ui-saucedemo-e2e-SauceDemo-f6247-d-remove-products-from-cart-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ba7697d303c533b60098-c87ae1f71c8a5c642711",
+              "file": "ui/saucedemo/e2e.spec.ts",
+              "line": 45,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-03T16:39:42.061Z",
+    "duration": 45233.023,
+    "expected": 54,
+    "skipped": 8,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

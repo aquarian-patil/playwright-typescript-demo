@@ -1,0 +1,9 @@
+2026-08-03 21:01:37 [info]: Navigating to https://opensource-demo.orangehrmlive.com
+2026-08-03 21:01:52 [info]: Page loaded successfully
+2026-08-03 21:01:52 [info]: Navigating to https://opensource-demo.orangehrmlive.com
+2026-08-03 21:01:55 [info]: Page loaded successfully
+2026-08-03 21:01:55 [info]: Logging in as: Admin
+2026-08-03 21:02:31 [warn]: Network idle timeout, checking if page is loaded...
+2026-08-03 21:02:31 [info]: Page loaded (without network idle)
+2026-08-03 21:02:31 [info]: Logging out
+2026-08-03 21:02:48 [warn]: Network idle timeout, checking if page is loaded...

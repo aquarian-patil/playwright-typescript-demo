@@ -1,0 +1,5 @@
+2026-08-03 20:58:25 [info]: Navigating to https://opensource-demo.orangehrmlive.com
+2026-08-03 20:58:39 [info]: Page loaded successfully
+2026-08-03 20:58:39 [info]: Logging in as: invalid
+2026-08-03 20:58:42 [info]: Page loaded successfully
+2026-08-03 20:58:43 [info]: Error message displayed: Invalid credentials

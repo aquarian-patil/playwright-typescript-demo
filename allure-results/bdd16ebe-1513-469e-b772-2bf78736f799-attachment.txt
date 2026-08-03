@@ -1,0 +1,4 @@
+2026-08-03 20:40:38 [info]: Navigating to https://opensource-demo.orangehrmlive.com
+2026-08-03 20:40:49 [info]: Page loaded successfully
+2026-08-03 20:40:49 [info]: Logging in as: Admin
+2026-08-03 20:41:00 [info]: Page loaded successfully
