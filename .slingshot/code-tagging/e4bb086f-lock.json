@@ -1,0 +1,220 @@
+{
+  "playwright.config.ts": {
+    "filename": "playwright.config.ts",
+    "path": "playwright.config.ts",
+    "version": "1.2",
+    "contextFile": "e4bb086f-context.json",
+    "chunks": {
+      "8987a4": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785780365,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "chat",
+        "type": "copyCode",
+        "extraContext": {
+          "promptMessage": "0b14beba"
+        },
+        "hash": "dee6774c",
+        "messageId": "system_de905f10-8f5d-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": "system_de905f10-8f5d-11f1-aa25-c57fbf4f9b5d-Codeblock-5",
+        "isActive": false,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/3/2026, 11:36:05 PM\n- **source**: chat\n- **type**: copyCode\n"
+      },
+      "a4fb83": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785787662,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "2afc0413",
+          "files": "178c6bf6"
+        },
+        "hash": "e0ef1adc",
+        "messageId": "system_ec495da0-8f76-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/4/2026, 1:37:42 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "735ddb": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785787735,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "2aca6eb6",
+          "files": "5febb76f"
+        },
+        "hash": "43257fc2",
+        "messageId": "system_1a3d4820-8f77-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/4/2026, 1:38:55 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "fdb810": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785787735,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "2aca6eb6",
+          "files": "5febb76f"
+        },
+        "hash": "8ed3f607",
+        "messageId": "system_1a3d4820-8f77-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/4/2026, 1:38:55 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "397c0d": {
+        "user": "Nithin Kumar Patil",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1785787735,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.0.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "2aca6eb6",
+          "files": "5febb76f"
+        },
+        "hash": "839a93a5",
+        "messageId": "system_1a3d4820-8f77-11f1-aa25-c57fbf4f9b5d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Nithin Kumar Patil\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 8/4/2026, 1:38:55 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "a4fb83",
+        "hash": "b4b5e821",
+        "encoded": "import%20%7B%20defineConfig,%20devices%20%7D%20from%20'@playwright/test';",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "a4fb83",
+        "hash": "97fe70ea",
+        "encoded": "export%20default%20defineConfig(%7B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "397c0d",
+        "hash": "2c95248e",
+        "encoded": "fullyParallel:%20true,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "397c0d",
+        "hash": "81680746",
+        "encoded": "forbidOnly:%20!!process.env.CI,",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "397c0d",
+        "hash": "1ccf9231",
+        "encoded": "retries:%20process.env.CI%20?%202%20:%200,",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "397c0d",
+        "hash": "b2ab92ad",
+        "encoded": "workers:%20process.env.CI%20?%201%20:%20undefined,",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "397c0d",
+        "hash": "93688d04",
+        "encoded": "reporter:%20%5B",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "735ddb",
+        "hash": "5b21f9eb",
+        "encoded": "forbidOnly:%20Boolean(process.env.CI),",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "735ddb",
+        "hash": "bbdef928",
+        "encoded": "retries:%20process.env.CI%20?%202%20:%200,",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "735ddb",
+        "hash": "37730bc6",
+        "encoded": "workers:%20process.env.CI%20?%201%20:%204,",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "735ddb",
+        "hash": "28b85131",
+        "encoded": "reporter:%20%5B",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "fdb810",
+        "hash": "891b8eae",
+        "encoded": "use:%20%7B",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "fdb810",
+        "hash": "da1c08d2",
+        "encoded": "baseURL:%20process.env.BASE_URL%20%7C%7C%20'https://www.saucedemo.com',",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "fdb810",
+        "hash": "9d5e98ac",
+        "encoded": "trace:%20'retain-on-failure',",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "fdb810",
+        "hash": "834dfd1d",
+        "encoded": "screenshot:%20'only-on-failure',",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "fdb810",
+        "hash": "c6cef4c9",
+        "encoded": "video:%20'retain-on-failure',",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "fdb810",
+        "hash": "d9587f92",
+        "encoded": "actionTimeout:%2015000,",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "fdb810",
+        "hash": "be305c94",
+        "encoded": "navigationTimeout:%2030000,",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "fdb810",
+        "hash": "c541b7ab",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

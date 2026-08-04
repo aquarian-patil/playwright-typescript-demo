@@ -1,6 +1,6 @@
-import { Page, Locator } from '@playwright/test';
-import { BasePage } from '../../base/BasePage';
-import { EnvironmentManager } from '../../config/EnvironmentManager';
+import { Page, Locator } from "@playwright/test";
+import { BasePage } from "../../base/BasePage";
+import { EnvironmentManager } from "../../config/EnvironmentManager";
 
 /**
  * LoginPage - OrangeHRM login page object
@@ -16,12 +16,12 @@ export class LoginPage extends BasePage {
     super(page);
     const env = EnvironmentManager.getInstance();
     this.url = `${env.getOrangeHrmUrl()}/web/index.php/auth/login`;
-    
+
     // Locators
     this.usernameInput = page.locator('input[name="username"]');
     this.passwordInput = page.locator('input[name="password"]');
     this.loginButton = page.locator('button[type="submit"]');
-    this.errorMessage = page.locator('.oxd-alert-content-text');
+    this.errorMessage = page.locator(".oxd-alert-content-text");
   }
 
   /**
@@ -39,7 +39,7 @@ export class LoginPage extends BasePage {
    */
   async isErrorDisplayed(): Promise<boolean> {
     try {
-      await this.errorMessage.waitFor({ state: 'visible', timeout: 5000 });
+      await this.errorMessage.waitFor({ state: "visible", timeout: 5000 });
       return await this.isVisible(this.errorMessage);
     } catch {
       return false;

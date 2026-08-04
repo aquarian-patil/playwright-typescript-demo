@@ -1,0 +1,44 @@
+{
+  "filename": "playwright.config.ts",
+  "path": "playwright.config.ts",
+  "version": "1.1",
+  "files": {
+    "178c6bf6": {
+      "value": [
+        {
+          "programming_language": "TypeScript",
+          "fileName": "playwright.config.ts",
+          "relativeFilePath": "playwright.config.ts",
+          "startLine": [1],
+          "endLine": [60]
+        }
+      ]
+    },
+    "5febb76f": {
+      "value": [
+        {
+          "programming_language": "TypeScript",
+          "fileName": "playwright.config.ts",
+          "relativeFilePath": "playwright.config.ts",
+          "startLine": [1],
+          "endLine": [59]
+        }
+      ]
+    }
+  },
+  "promptMessage": {
+    "0b14beba": {
+      "value": "yes please"
+    },
+    "2afc0413": {
+      "value": "fix problems in lines 2, 11, 12, 13 and 29"
+    },
+    "2aca6eb6": {
+      "value": "still have problems in lines 10, 11, 12 and 28"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

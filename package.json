@@ -1,25 +1,32 @@
 {
-  "name": "playwright-typescript-demo",
+  "name": "playwright-typescript-enterprise-framework",
   "version": "1.0.0",
-  "description": "Enterprise QE Automation Framework - Playwright + TypeScript",
+  "description": "Enterprise-grade QE automation framework using Playwright and TypeScript",
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
     "test:ui": "playwright test tests/ui",
     "test:api": "playwright test tests/api",
-    "test:chromium": "playwright test --project=chromium",
-    "test:firefox": "playwright test --project=firefox",
-    "test:webkit": "playwright test --project=webkit",
+    "test:orangehrm": "playwright test tests/ui/orangehrm",
+    "test:saucedemo": "playwright test tests/ui/saucedemo",
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
-    "report": "playwright show-report",
-    "allure:generate": "allure generate allure-results --clean",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:safari": "playwright test --project=webkit",
+    "test:parallel": "playwright test --workers=4",
+    "test:serial": "playwright test --workers=1",
+    "test:report": "playwright show-report",
+    "test:trace": "playwright show-trace",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
     "allure:open": "allure open allure-report",
-    "lint": "eslint src tests --ext .ts",
-    "lint:fix": "eslint src tests --ext .ts --fix",
-    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
-    "format:check": "prettier --check \"src/**/*.ts\" \"tests/**/*.ts\"",
-    "type-check": "tsc --noEmit"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{ts,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,json,md}\"",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf test-results playwright-report allure-results allure-report screenshots videos traces logs",
+    "prepare": "husky install"
   },
   "keywords": [
     "playwright",
@@ -27,32 +34,52 @@
     "automation",
     "testing",
     "e2e",
-    "api-testing"
+    "api-testing",
+    "qa",
+    "framework"
   ],
-  "author": "Nitin Patil",
-  "license": "ISC",
+  "author": "Principal QE Architect",
+  "license": "MIT",
   "devDependencies": {
     "@playwright/test": "^1.48.0",
     "@types/node": "^22.10.2",
     "@typescript-eslint/eslint-plugin": "^8.18.2",
     "@typescript-eslint/parser": "^8.18.2",
-    "allure-commandline": "^2.32.0",
-    "allure-playwright": "^3.0.4",
+    "allure-commandline": "^2.32.1",
+    "allure-playwright": "^3.0.3",
+    "dotenv": "^16.4.7",
     "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-playwright": "^2.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
     "prettier": "^3.4.2",
-    "typescript": "^5.7.2"
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.66.0"
   },
   "dependencies": {
     "@faker-js/faker": "^9.3.0",
+    "ajv": "^8.17.1",
     "axios": "^1.7.9",
-    "dotenv": "^16.4.7",
+    "csv-parse": "^5.6.0",
+    "csv-stringify": "^6.5.2",
     "exceljs": "^4.4.0",
-    "fast-csv": "^5.0.1",
     "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }

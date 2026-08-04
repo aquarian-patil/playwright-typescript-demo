@@ -1,6 +1,6 @@
-import { BaseApiClient } from '../BaseApiClient';
-import { EnvironmentManager } from '../../config/EnvironmentManager';
-import { IApiResponse } from '../../interfaces/IApiResponse';
+import { BaseApiClient } from "../BaseApiClient";
+import { EnvironmentManager } from "../../config/EnvironmentManager";
+import { IApiResponse } from "../../interfaces/IApiResponse";
 
 /**
  * ReqResClient - API client for ReqRes API
@@ -9,11 +9,11 @@ export class ReqResClient extends BaseApiClient {
   constructor() {
     const env = EnvironmentManager.getInstance();
     super(env.getReqResApiUrl());
-    
+
     // Add API key if available
     const apiKey = env.getReqResApiKey();
     if (apiKey) {
-      this.client.defaults.headers.common['x-api-key'] = apiKey;
+      this.client.defaults.headers.common["x-api-key"] = apiKey;
     }
   }
 
@@ -34,14 +34,20 @@ export class ReqResClient extends BaseApiClient {
   /**
    * Create new user
    */
-  async createUser(user: { name: string; job: string }): Promise<IApiResponse<any>> {
-    return await this.post('/users', user);
+  async createUser(user: {
+    name: string;
+    job: string;
+  }): Promise<IApiResponse<any>> {
+    return await this.post("/users", user);
   }
 
   /**
    * Update user
    */
-  async updateUser(id: number, user: { name: string; job: string }): Promise<IApiResponse<any>> {
+  async updateUser(
+    id: number,
+    user: { name: string; job: string },
+  ): Promise<IApiResponse<any>> {
     return await this.put(`/users/${id}`, user);
   }
 
@@ -55,7 +61,10 @@ export class ReqResClient extends BaseApiClient {
   /**
    * Login
    */
-  async login(credentials: { email: string; password: string }): Promise<IApiResponse<any>> {
-    return await this.post('/login', credentials);
+  async login(credentials: {
+    email: string;
+    password: string;
+  }): Promise<IApiResponse<any>> {
+    return await this.post("/login", credentials);
   }
 }

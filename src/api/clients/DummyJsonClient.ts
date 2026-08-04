@@ -1,6 +1,6 @@
-import { BaseApiClient } from '../BaseApiClient';
-import { EnvironmentManager } from '../../config/EnvironmentManager';
-import { IApiResponse } from '../../interfaces/IApiResponse';
+import { BaseApiClient } from "../BaseApiClient";
+import { EnvironmentManager } from "../../config/EnvironmentManager";
+import { IApiResponse } from "../../interfaces/IApiResponse";
 
 /**
  * DummyJsonClient - API client for DummyJSON API
@@ -14,8 +14,11 @@ export class DummyJsonClient extends BaseApiClient {
   /**
    * Login user
    */
-  async login(credentials: { username: string; password: string }): Promise<IApiResponse<any>> {
-    return await this.post('/auth/login', credentials);
+  async login(credentials: {
+    username: string;
+    password: string;
+  }): Promise<IApiResponse<any>> {
+    return await this.post("/auth/login", credentials);
   }
 
   /**

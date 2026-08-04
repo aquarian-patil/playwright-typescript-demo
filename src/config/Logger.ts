@@ -1,16 +1,16 @@
-import winston from 'winston';
-import DailyRotateFile from 'winston-daily-rotate-file';
-import * as path from 'path';
+import winston from "winston";
+import DailyRotateFile from "winston-daily-rotate-file";
+import * as path from "path";
 
 export class Logger {
   private static instance: Logger;
   private logger: winston.Logger;
 
   private constructor() {
-    const logDir = path.join(process.cwd(), 'logs');
+    const logDir = path.join(process.cwd(), "logs");
 
     const logFormat = winston.format.combine(
-      winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+      winston.format.timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
       winston.format.errors({ stack: true }),
       winston.format.printf(({ timestamp, level, message, stack }) => {
         return stack
@@ -20,7 +20,7 @@ export class Logger {
     );
 
     this.logger = winston.createLogger({
-      level: process.env.LOG_LEVEL || 'info',
+      level: process.env.LOG_LEVEL || "info",
       format: logFormat,
       transports: [
         new winston.transports.Console({
@@ -28,10 +28,10 @@ export class Logger {
         }),
         new DailyRotateFile({
           dirname: logDir,
-          filename: 'test-%DATE%.log',
-          datePattern: 'YYYY-MM-DD',
-          maxFiles: '14d',
-          maxSize: '20m',
+          filename: "test-%DATE%.log",
+          datePattern: "YYYY-MM-DD",
+          maxFiles: "14d",
+          maxSize: "20m",
         }),
       ],
     });

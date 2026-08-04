@@ -1,5 +1,5 @@
-import { Page, Locator, expect } from '@playwright/test';
-import { Logger } from '../config/Logger';
+import { Page, Locator } from "@playwright/test";
+import { Logger } from "../config/Logger";
 
 /**
  * BasePage - Base class for all page objects
@@ -24,7 +24,7 @@ export abstract class BasePage {
       try {
         this.logger.info(`Navigating to: ${this.url}`);
         await this.page.goto(this.url, {
-          waitUntil: 'networkidle',
+          waitUntil: "domcontentloaded",
           timeout: 60000,
         });
         return;
@@ -54,14 +54,17 @@ export abstract class BasePage {
    * Get text from element
    */
   async getText(locator: Locator): Promise<string> {
-    return await locator.textContent() || '';
+    return (await locator.textContent()) || "";
   }
 
   /**
    * Wait for element to be visible
    */
-  async waitForVisible(locator: Locator, timeout: number = 10000): Promise<void> {
-    await locator.waitFor({ state: 'visible', timeout });
+  async waitForVisible(
+    locator: Locator,
+    timeout: number = 10000,
+  ): Promise<void> {
+    await locator.waitFor({ state: "visible", timeout });
   }
 
   /**

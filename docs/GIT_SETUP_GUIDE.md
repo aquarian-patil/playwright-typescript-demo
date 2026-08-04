@@ -54,6 +54,7 @@ git push -u origin main
 ## 📝 What Will Be Committed?
 
 ### ✅ Included (Source Code & Config)
+
 ```
 src/                          # Source code
 tests/                        # Test files
@@ -73,6 +74,7 @@ Dockerfile                    # Docker configuration
 ```
 
 ### ❌ Excluded (Generated/Sensitive)
+
 ```
 node_modules/                 # 250+ MB of dependencies
 test-results/                 # Test execution results
@@ -89,6 +91,7 @@ logs/                         # Log files
 ## 🧹 Clean Before Committing
 
 ### Remove Generated Files
+
 ```bash
 # Remove all ignored directories
 Remove-Item -Recurse -Force test-results, playwright-report, logs, allure-results, allure-report -ErrorAction SilentlyContinue
@@ -98,6 +101,7 @@ git status
 ```
 
 ### Check Repository Size
+
 ```bash
 # See total size
 git count-objects -vH
@@ -110,12 +114,14 @@ git count-objects -vH
 ### Before Committing
 
 1. **Verify `.env` is NOT included:**
+
    ```bash
    git status | Select-String ".env"
    # Should show nothing or only .env.example
    ```
 
 2. **Check for sensitive data:**
+
    ```bash
    # Search for potential secrets
    git grep -i "password"
@@ -194,6 +200,7 @@ main                    # Production-ready code
 ```
 
 ### Branch Naming
+
 ```bash
 feature/add-api-tests
 bugfix/fix-login-timeout
@@ -206,6 +213,7 @@ release/v1.2.0
 ## 🛠️ Useful Git Commands
 
 ### Status & Inspection
+
 ```bash
 # Check status
 git status
@@ -224,6 +232,7 @@ git show <commit-hash>
 ```
 
 ### Undo Changes
+
 ```bash
 # Discard changes in working directory
 git checkout -- <file>
@@ -239,6 +248,7 @@ git reset --hard HEAD~1
 ```
 
 ### Branches
+
 ```bash
 # List branches
 git branch -a
@@ -289,6 +299,7 @@ npm install
 ```
 
 ### Manual Hook Setup
+
 ```bash
 # If Husky not installed
 npx husky install
@@ -319,6 +330,7 @@ Before your first commit:
 ## 🔄 Syncing with Remote
 
 ### Regular Updates
+
 ```bash
 # Fetch and merge changes
 git pull origin main
@@ -331,6 +343,7 @@ git push origin main
 ```
 
 ### Sync Fork
+
 ```bash
 # Add upstream remote (original repo)
 git remote add upstream https://github.com/ORIGINAL_OWNER/repo.git
@@ -368,6 +381,7 @@ git merge upstream/main
 ## ❓ Troubleshooting
 
 ### Large File Error
+
 ```bash
 # Error: file exceeds GitHub's 100 MB limit
 # Solution: Add to .gitignore and remove from staging
@@ -377,6 +391,7 @@ git commit -m "Remove large file"
 ```
 
 ### Accidentally Committed .env
+
 ```bash
 # Remove from staging (before commit)
 git rm --cached .env
@@ -388,6 +403,7 @@ git filter-branch --force --index-filter \
 ```
 
 ### Merge Conflicts
+
 ```bash
 # 1. See conflicting files
 git status

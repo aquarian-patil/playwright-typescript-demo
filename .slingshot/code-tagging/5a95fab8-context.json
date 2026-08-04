@@ -9,12 +9,8 @@
           "programming_language": "JSON",
           "fileName": "tsconfig.json",
           "relativeFilePath": "tsconfig.json",
-          "startLine": [
-            1
-          ],
-          "endLine": [
-            95
-          ]
+          "startLine": [1],
+          "endLine": [95]
         }
       ]
     }

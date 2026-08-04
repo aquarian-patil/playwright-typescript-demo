@@ -1,6 +1,6 @@
-import { Page, Locator } from '@playwright/test';
-import { BasePage } from '../../base/BasePage';
-import { EnvironmentManager } from '../../config/EnvironmentManager';
+import { Page, Locator } from "@playwright/test";
+import { BasePage } from "../../base/BasePage";
+import { EnvironmentManager } from "../../config/EnvironmentManager";
 
 /**
  * LoginPage - SauceDemo login page object
@@ -15,12 +15,12 @@ export class LoginPage extends BasePage {
   constructor(page: Page) {
     super(page);
     const env = EnvironmentManager.getInstance();
-    this.url = env.getBaseUrl();
-    
+    this.url = env.getSauceDemoUrl();
+
     // Locators
-    this.usernameInput = page.locator('#user-name');
-    this.passwordInput = page.locator('#password');
-    this.loginButton = page.locator('#login-button');
+    this.usernameInput = page.locator("#user-name");
+    this.passwordInput = page.locator("#password");
+    this.loginButton = page.locator("#login-button");
     this.errorMessage = page.locator('[data-test="error"]');
   }
 

@@ -1,8 +1,8 @@
-import { test, expect } from '@playwright/test';
-import { PetstoreClient } from '../../src/api/clients/PetstoreClient';
-import { faker } from '@faker-js/faker';
+import { test, expect } from "@playwright/test";
+import { PetstoreClient } from "../../src/api/clients/PetstoreClient";
+import { faker } from "@faker-js/faker";
 
-test.describe('Swagger Petstore API Tests', () => {
+test.describe("Swagger Petstore API Tests", () => {
   let client: PetstoreClient;
   let createdPetId: number;
   let createdOrderId: number;
@@ -12,92 +12,92 @@ test.describe('Swagger Petstore API Tests', () => {
     client = new PetstoreClient();
   });
 
-  test.describe('Pet API - CRUD Operations', () => {
-    test('should add a new pet to the store', async () => {
+  test.describe("Pet API - CRUD Operations", () => {
+    test("should add a new pet to the store", async () => {
       const newPet = {
         id: Math.floor(Math.random() * 1000) + 1,
         name: faker.animal.dog(),
-        photoUrls: ['https://example.com/photo.jpg'],
-        status: 'available',
-        category: { id: 1, name: 'Dogs' },
-        tags: [{ id: 1, name: 'friendly' }],
+        photoUrls: ["https://example.com/photo.jpg"],
+        status: "available",
+        category: { id: 1, name: "Dogs" },
+        tags: [{ id: 1, name: "friendly" }],
       };
 
       const response = await client.addPet(newPet);
 
       expect(response.status).toBe(200);
-      expect(response.data).toHaveProperty('id');
+      expect(response.data).toHaveProperty("id");
       expect(response.data.name).toBe(newPet.name);
       createdPetId = response.data.id;
     });
 
-    test('should get pet by ID', async () => {
+    test("should get pet by ID", async () => {
       const newPet = {
         id: Math.floor(Math.random() * 1000) + 1,
         name: faker.animal.dog(),
-        photoUrls: ['https://example.com/photo.jpg'],
-        status: 'available',
+        photoUrls: ["https://example.com/photo.jpg"],
+        status: "available",
       };
       const createResponse = await client.addPet(newPet);
       const petId = createResponse.data.id;
-      
+
       const response = await client.getPetById(petId);
 
       expect(response.status).toBe(200);
-      expect(response.data).toHaveProperty('id', petId);
-      expect(response.data).toHaveProperty('name');
+      expect(response.data).toHaveProperty("id", petId);
+      expect(response.data).toHaveProperty("name");
     });
 
-    test('should find pets by status - available', async () => {
-      const response = await client.findPetsByStatus('available');
+    test("should find pets by status - available", async () => {
+      const response = await client.findPetsByStatus("available");
 
       expect(response.status).toBe(200);
       expect(Array.isArray(response.data)).toBe(true);
     });
 
-    test('should find pets by status - pending', async () => {
-      const response = await client.findPetsByStatus('pending');
+    test("should find pets by status - pending", async () => {
+      const response = await client.findPetsByStatus("pending");
 
       expect(response.status).toBe(200);
       expect(Array.isArray(response.data)).toBe(true);
     });
 
-    test('should find pets by status - sold', async () => {
-      const response = await client.findPetsByStatus('sold');
+    test("should find pets by status - sold", async () => {
+      const response = await client.findPetsByStatus("sold");
 
       expect(response.status).toBe(200);
       expect(Array.isArray(response.data)).toBe(true);
     });
 
-    test('should update an existing pet', async () => {
+    test("should update an existing pet", async () => {
       const newPet = {
         id: Math.floor(Math.random() * 1000) + 1,
         name: faker.animal.dog(),
-        photoUrls: ['https://example.com/photo.jpg'],
-        status: 'available',
+        photoUrls: ["https://example.com/photo.jpg"],
+        status: "available",
       };
       const createResponse = await client.addPet(newPet);
       const petId = createResponse.data.id;
-      
+
       const getResponse = await client.getPetById(petId);
       const existingPet = getResponse.data;
-      
+
       const updatedPet = {
         ...existingPet,
         name: `Updated ${existingPet.name}`,
-        status: 'sold',
+        status: "sold",
       };
 
       const response = await client.updatePet(updatedPet);
 
       expect(response.status).toBe(200);
       expect(response.data.id).toBe(petId);
-      expect(response.data.status).toBe('sold');
+      expect(response.data.status).toBe("sold");
     });
 
-    test('should handle non-existent pet ID gracefully', async () => {
+    test("should handle non-existent pet ID gracefully", async () => {
       const nonExistentId = 999999999;
-      
+
       try {
         await client.getPetById(nonExistentId);
         expect(true).toBe(false);
@@ -107,7 +107,7 @@ test.describe('Swagger Petstore API Tests', () => {
       }
     });
 
-    test('should delete a pet', async () => {
+    test("should delete a pet", async () => {
       if (!createdPetId) {
         test.skip();
         return;
@@ -122,48 +122,48 @@ test.describe('Swagger Petstore API Tests', () => {
     });
   });
 
-  test.describe('Store API - Inventory and Orders', () => {
-    test('should get store inventory', async () => {
+  test.describe("Store API - Inventory and Orders", () => {
+    test("should get store inventory", async () => {
       const response = await client.getStoreInventory();
 
       expect(response.status).toBe(200);
-      expect(typeof response.data).toBe('object');
+      expect(typeof response.data).toBe("object");
     });
 
-    test('should place an order for a pet', async () => {
+    test("should place an order for a pet", async () => {
       const newOrder = {
         id: Math.floor(Math.random() * 1000) + 1,
         petId: 1,
         quantity: 1,
-        status: 'placed',
+        status: "placed",
       };
 
       const response = await client.placeOrder(newOrder);
 
       expect(response.status).toBe(200);
-      expect(response.data).toHaveProperty('id');
+      expect(response.data).toHaveProperty("id");
       createdOrderId = response.data.id;
     });
 
-    test('should get order by ID', async () => {
+    test("should get order by ID", async () => {
       const newOrder = {
         id: Math.floor(Math.random() * 1000) + 1,
         petId: 1,
         quantity: 1,
-        status: 'placed',
+        status: "placed",
       };
       const createResponse = await client.placeOrder(newOrder);
       const orderId = createResponse.data.id;
-      
+
       const response = await client.getOrderById(orderId);
 
       expect(response.status).toBe(200);
-      expect(response.data).toHaveProperty('id', orderId);
+      expect(response.data).toHaveProperty("id", orderId);
     });
 
-    test('should handle invalid order ID gracefully', async () => {
+    test("should handle invalid order ID gracefully", async () => {
       const invalidOrderId = 999999;
-      
+
       try {
         await client.getOrderById(invalidOrderId);
         expect(true).toBe(false);
@@ -173,7 +173,7 @@ test.describe('Swagger Petstore API Tests', () => {
       }
     });
 
-    test('should delete an order', async () => {
+    test("should delete an order", async () => {
       if (!createdOrderId) {
         test.skip();
         return;
@@ -188,14 +188,14 @@ test.describe('Swagger Petstore API Tests', () => {
     });
   });
 
-  test.describe('User API - User Management', () => {
-    test('should create a new user', async () => {
+  test.describe("User API - User Management", () => {
+    test("should create a new user", async () => {
       const newUser = {
         username: testUsername,
         firstName: faker.person.firstName(),
         lastName: faker.person.lastName(),
         email: faker.internet.email(),
-        password: 'test123',
+        password: "test123",
         phone: faker.phone.number(),
       };
 
@@ -204,30 +204,30 @@ test.describe('Swagger Petstore API Tests', () => {
       expect(response.status).toBe(200);
     });
 
-    test('should get user by username', async () => {
+    test("should get user by username", async () => {
       const response = await client.getUserByUsername(testUsername);
 
       expect(response.status).toBe(200);
-      expect(response.data).toHaveProperty('username', testUsername);
+      expect(response.data).toHaveProperty("username", testUsername);
     });
 
-    test('should login user', async () => {
-      const response = await client.loginUser(testUsername, 'test123');
+    test("should login user", async () => {
+      const response = await client.loginUser(testUsername, "test123");
 
       expect(response.status).toBe(200);
     });
 
-    test('should logout user', async () => {
+    test("should logout user", async () => {
       const response = await client.logoutUser();
 
       expect(response.status).toBe(200);
     });
 
-    test('should update user', async () => {
+    test("should update user", async () => {
       const updatedUser = {
         username: testUsername,
-        firstName: 'UpdatedFirstName',
-        lastName: 'UpdatedLastName',
+        firstName: "UpdatedFirstName",
+        lastName: "UpdatedLastName",
         email: faker.internet.email(),
       };
 
@@ -236,7 +236,7 @@ test.describe('Swagger Petstore API Tests', () => {
       expect(response.status).toBe(200);
     });
 
-    test('should create multiple users with array', async () => {
+    test("should create multiple users with array", async () => {
       const users = [
         {
           username: `user1_${Date.now()}`,
@@ -257,9 +257,9 @@ test.describe('Swagger Petstore API Tests', () => {
       expect(response.status).toBe(200);
     });
 
-    test('should handle non-existent user gracefully', async () => {
-      const nonExistentUser = 'nonexistentuser999999';
-      
+    test("should handle non-existent user gracefully", async () => {
+      const nonExistentUser = "nonexistentuser999999";
+
       try {
         await client.getUserByUsername(nonExistentUser);
         expect(true).toBe(false);
@@ -269,7 +269,7 @@ test.describe('Swagger Petstore API Tests', () => {
       }
     });
 
-    test('should delete user', async () => {
+    test("should delete user", async () => {
       try {
         const response = await client.deleteUser(testUsername);
         expect(response.status).toBe(200);

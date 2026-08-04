@@ -22,7 +22,7 @@ export interface IApiError {
  * IApiRequestConfig - API request configuration
  */
 export interface IApiRequestConfig {
-  method: 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE';
+  method: "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
   url: string;
   headers?: Record<string, string>;
   params?: Record<string, any>;

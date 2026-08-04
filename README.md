@@ -26,6 +26,8 @@ Production-ready Quality Engineering automation framework built with **Playwrigh
 - **Node.js** >=18.0.0
 - **Winston** (Logging)
 - **Axios** (API Client)
+- **ESLint** & **Prettier** (Code Quality)
+- **Husky** (Git Hooks)
 - **Allure** (Reporting)
 - **Faker** (Test Data)
 
@@ -54,21 +56,25 @@ cp .env.example .env
 ## ▶️ Running Tests
 
 ### All Tests
+
 ```bash
 npm test
 ```
 
 ### UI Tests Only
+
 ```bash
 npm run test:ui
 ```
 
 ### API Tests Only
+
 ```bash
 npm run test:api
 ```
 
 ### Browser-Specific
+
 ```bash
 npm run test:chromium
 npm run test:firefox
@@ -76,11 +82,13 @@ npm run test:webkit
 ```
 
 ### Debug Mode
+
 ```bash
 npm run test:debug
 ```
 
 ### Headed Mode
+
 ```bash
 npm run test:headed
 ```
@@ -90,11 +98,13 @@ npm run test:headed
 ## 📊 Reports
 
 ### HTML Report
+
 ```bash
-npm run report
+npm run test:report
 ```
 
 ### Allure Report
+
 ```bash
 npm run allure:generate
 npm run allure:open
@@ -108,12 +118,12 @@ npm run allure:open
 
 Comprehensive API testing framework with **60 tests** across **4 API applications**:
 
-| API | Tests | Auth Required | Status |
-|-----|-------|---------------|--------|
-| **DummyJSON** | 10 | ❌ No | ✅ FREE |
-| **JSONPlaceholder** | 25 | ❌ No | ✅ FREE |
-| **Petstore** | 20 | ❌ No | ✅ FREE |
-| **ReqRes** | 6 | ✅ Yes* | ⚠️ Optional |
+| API                 | Tests | Auth Required | Status      |
+| ------------------- | ----- | ------------- | ----------- |
+| **DummyJSON**       | 10    | ❌ No         | ✅ FREE     |
+| **JSONPlaceholder** | 25    | ❌ No         | ✅ FREE     |
+| **Petstore**        | 20    | ❌ No         | ✅ FREE     |
+| **ReqRes**          | 6     | ✅ Yes*       | ⚠️ Optional |
 
 **54 tests (90%) run without any configuration!**
 
@@ -135,9 +145,11 @@ npx playwright test tests/api/reqres.spec.ts  # Skips if no API key
 ### API Applications
 
 #### 1. DummyJSON (10 tests)
+
 **URL:** https://dummyjson.com
 
 **Test Coverage:**
+
 - ✅ Authentication (login success/failure)
 - ✅ Products CRUD
 - ✅ Search functionality
@@ -145,9 +157,11 @@ npx playwright test tests/api/reqres.spec.ts  # Skips if no API key
 - ✅ Error handling (404, 400)
 
 #### 2. JSONPlaceholder (25 tests)
+
 **URL:** https://jsonplaceholder.typicode.com
 
 **Test Coverage:**
+
 - ✅ Posts (GET, POST, PUT, PATCH, DELETE)
 - ✅ Comments & nested resources
 - ✅ Users management
@@ -155,9 +169,11 @@ npx playwright test tests/api/reqres.spec.ts  # Skips if no API key
 - ✅ Albums & photos
 
 #### 3. Swagger Petstore (20 tests)
+
 **URL:** https://petstore.swagger.io/v2
 
 **Test Coverage:**
+
 - ✅ Pet CRUD operations
 - ✅ Store inventory & orders
 - ✅ User management
@@ -165,9 +181,11 @@ npx playwright test tests/api/reqres.spec.ts  # Skips if no API key
 - ✅ Faker.js data generation
 
 #### 4. ReqRes (6 tests - Optional)
+
 **URL:** https://reqres.in/api
 
 **Test Coverage:**
+
 - ✅ Users CRUD
 - ✅ Authentication
 
@@ -178,24 +196,30 @@ npx playwright test tests/api/reqres.spec.ts  # Skips if no API key
 ## 📝 Demo Applications
 
 ### OrangeHRM
+
 **URL:** https://opensource-demo.orangehrmlive.com
 
 **Credentials:**
+
 - Username: `Admin`
 - Password: `admin123`
 
 **Automated Scenarios:**
+
 - Login/Logout
 - Dashboard verification
 
 ### SauceDemo
+
 **URL:** https://www.saucedemo.com
 
 **Credentials:**
+
 - Username: `standard_user`
 - Password: `secret_sauce`
 
 **Automated Scenarios:**
+
 - Login/Logout
 - Product browsing
 - Add to cart
@@ -206,6 +230,7 @@ npx playwright test tests/api/reqres.spec.ts  # Skips if no API key
 
 ```
 playwright-typescript-demo/
+├── data/
 ├── src/
 │   ├── api/
 │   │   ├── BaseApiClient.ts
@@ -219,15 +244,20 @@ playwright-typescript-demo/
 │   ├── config/
 │   │   ├── EnvironmentManager.ts
 │   │   └── Logger.ts
+│   ├── enums/
+│   ├── fixtures/
+│   ├── helpers/
 │   ├── interfaces/
 │   │   └── IApiResponse.ts
-│   └── pages/
-│       ├── orangehrm/
-│       │   ├── LoginPage.ts
-│       │   └── DashboardPage.ts
-│       └── saucedemo/
-│           ├── LoginPage.ts
-│           └── ProductsPage.ts
+│   ├── locators/
+│   ├── pages/
+│   │   ├── orangehrm/
+│   │   │   ├── LoginPage.ts
+│   │   │   └── DashboardPage.ts
+│   │   └── saucedemo/
+│   │       ├── LoginPage.ts
+│   │       └── ProductsPage.ts
+│   └── utils/
 ├── tests/
 │   ├── api/
 │   │   ├── dummyjson.spec.ts
@@ -252,18 +282,21 @@ playwright-typescript-demo/
 ## 🔧 Code Quality
 
 ### Linting
+
 ```bash
 npm run lint
 npm run lint:fix
 ```
 
 ### Formatting
+
 ```bash
 npm run format
 npm run format:check
 ```
 
 ### Type Checking
+
 ```bash
 npm run type-check
 ```
@@ -273,17 +306,16 @@ npm run type-check
 ## 🚀 CI/CD Ready
 
 ✅ **54 API tests run without any configuration**
+
 - No environment variables required
-- No API keys needed  
+- No API keys needed
 - Perfect for CI/CD pipelines
 
 ⏭️ **6 ReqRes tests skip gracefully** when API key not configured
 
 ---
 
-## 📝 License
-
-ISC
+MIT
 
 ---
 

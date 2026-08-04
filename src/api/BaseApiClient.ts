@@ -1,6 +1,6 @@
-import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
-import { Logger } from '../config/Logger';
-import { IApiResponse, IApiError } from '../interfaces/IApiResponse';
+import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
+import { Logger } from "../config/Logger";
+import { IApiResponse, IApiError } from "../interfaces/IApiResponse";
 
 /**
  * BaseApiClient - Base class for all API clients
@@ -22,7 +22,7 @@ export abstract class BaseApiClient {
       baseURL: this.baseURL,
       timeout,
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
     });
   }
@@ -30,14 +30,16 @@ export abstract class BaseApiClient {
   private setupInterceptors(): void {
     this.client.interceptors.request.use(
       (config) => {
-        this.logger.http(`[REQUEST] ${config.method?.toUpperCase()} ${config.url}`);
+        this.logger.http(
+          `[REQUEST] ${config.method?.toUpperCase()} ${config.url}`,
+        );
         if (config.data) {
           this.logger.debug(`[REQUEST BODY] ${JSON.stringify(config.data)}`);
         }
         return config;
       },
       (error) => {
-        this.logger.error('[REQUEST ERROR]', error);
+        this.logger.error("[REQUEST ERROR]", error);
         return Promise.reject(error);
       },
     );
@@ -55,7 +57,7 @@ export abstract class BaseApiClient {
             `[RESPONSE ERROR] ${error.response.status} - ${error.response.statusText}`,
           );
         } else {
-          this.logger.error('[NETWORK ERROR]', error);
+          this.logger.error("[NETWORK ERROR]", error);
         }
         return Promise.reject(error);
       },
@@ -82,7 +84,11 @@ export abstract class BaseApiClient {
   ): Promise<IApiResponse<T>> {
     const startTime = Date.now();
     try {
-      const response: AxiosResponse<T> = await this.client.post(url, data, config);
+      const response: AxiosResponse<T> = await this.client.post(
+        url,
+        data,
+        config,
+      );
       return this.formatResponse(response, Date.now() - startTime);
     } catch (error) {
       throw this.handleError(error);
@@ -96,7 +102,11 @@ export abstract class BaseApiClient {
   ): Promise<IApiResponse<T>> {
     const startTime = Date.now();
     try {
-      const response: AxiosResponse<T> = await this.client.put(url, data, config);
+      const response: AxiosResponse<T> = await this.client.put(
+        url,
+        data,
+        config,
+      );
       return this.formatResponse(response, Date.now() - startTime);
     } catch (error) {
       throw this.handleError(error);
@@ -110,7 +120,11 @@ export abstract class BaseApiClient {
   ): Promise<IApiResponse<T>> {
     const startTime = Date.now();
     try {
-      const response: AxiosResponse<T> = await this.client.patch(url, data, config);
+      const response: AxiosResponse<T> = await this.client.patch(
+        url,
+        data,
+        config,
+      );
       return this.formatResponse(response, Date.now() - startTime);
     } catch (error) {
       throw this.handleError(error);
@@ -130,7 +144,10 @@ export abstract class BaseApiClient {
     }
   }
 
-  private formatResponse<T>(response: AxiosResponse<T>, duration: number): IApiResponse<T> {
+  private formatResponse<T>(
+    response: AxiosResponse<T>,
+    duration: number,
+  ): IApiResponse<T> {
     return {
       status: response.status,
       statusText: response.statusText,
@@ -150,16 +167,16 @@ export abstract class BaseApiClient {
     }
     return {
       status: 0,
-      message: error.message || 'Unknown error',
+      message: error.message || "Unknown error",
       error,
     };
   }
 
   protected setAuthToken(token: string): void {
-    this.client.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+    this.client.defaults.headers.common["Authorization"] = `Bearer ${token}`;
   }
 
   protected removeAuthToken(): void {
-    delete this.client.defaults.headers.common['Authorization'];
+    delete this.client.defaults.headers.common["Authorization"];
   }
 }

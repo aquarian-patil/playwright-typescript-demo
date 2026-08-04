@@ -1,6 +1,6 @@
-import { BaseApiClient } from '../BaseApiClient';
-import { EnvironmentManager } from '../../config/EnvironmentManager';
-import { IApiResponse } from '../../interfaces/IApiResponse';
+import { BaseApiClient } from "../BaseApiClient";
+import { EnvironmentManager } from "../../config/EnvironmentManager";
+import { IApiResponse } from "../../interfaces/IApiResponse";
 
 /**
  * PetstoreClient - API client for Swagger Petstore API
@@ -13,7 +13,7 @@ export class PetstoreClient extends BaseApiClient {
 
   // Pet operations
   async addPet(pet: any): Promise<IApiResponse<any>> {
-    return await this.post('/pet', pet);
+    return await this.post("/pet", pet);
   }
 
   async getPetById(petId: number): Promise<IApiResponse<any>> {
@@ -21,7 +21,7 @@ export class PetstoreClient extends BaseApiClient {
   }
 
   async updatePet(pet: any): Promise<IApiResponse<any>> {
-    return await this.put('/pet', pet);
+    return await this.put("/pet", pet);
   }
 
   async deletePet(petId: number): Promise<IApiResponse<any>> {
@@ -34,11 +34,11 @@ export class PetstoreClient extends BaseApiClient {
 
   // Store operations
   async getStoreInventory(): Promise<IApiResponse<any>> {
-    return await this.get('/store/inventory');
+    return await this.get("/store/inventory");
   }
 
   async placeOrder(order: any): Promise<IApiResponse<any>> {
-    return await this.post('/store/order', order);
+    return await this.post("/store/order", order);
   }
 
   async getOrderById(orderId: number): Promise<IApiResponse<any>> {
@@ -51,7 +51,7 @@ export class PetstoreClient extends BaseApiClient {
 
   // User operations
   async createUser(user: any): Promise<IApiResponse<any>> {
-    return await this.post('/user', user);
+    return await this.post("/user", user);
   }
 
   async getUserByUsername(username: string): Promise<IApiResponse<any>> {
@@ -66,15 +66,20 @@ export class PetstoreClient extends BaseApiClient {
     return await this.delete(`/user/${username}`);
   }
 
-  async loginUser(username: string, password: string): Promise<IApiResponse<any>> {
-    return await this.get(`/user/login?username=${username}&password=${password}`);
+  async loginUser(
+    username: string,
+    password: string,
+  ): Promise<IApiResponse<any>> {
+    return await this.get(
+      `/user/login?username=${username}&password=${password}`,
+    );
   }
 
   async logoutUser(): Promise<IApiResponse<any>> {
-    return await this.get('/user/logout');
+    return await this.get("/user/logout");
   }
 
   async createUsersWithArray(users: any[]): Promise<IApiResponse<any>> {
-    return await this.post('/user/createWithArray', users);
+    return await this.post("/user/createWithArray", users);
   }
 }
