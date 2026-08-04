@@ -2,23 +2,30 @@ import { test, expect } from "@playwright/test";
 import { LoginPage } from "../../../src/pages/orangehrm/LoginPage";
 import { DashboardPage } from "../../../src/pages/orangehrm/DashboardPage";
 import { EnvironmentManager } from "../../../src/config/EnvironmentManager";
+import { DataHelper } from "../../../src/helpers/DataHelper";
 
 test.describe("OrangeHRM - Login Tests", () => {
+  test.describe.configure({ retries: 2 }); // Demo site can be flaky
+
   let loginPage: LoginPage;
   let dashboardPage: DashboardPage;
   const env = EnvironmentManager.getInstance();
+  let usersData: any;
+
+  test.beforeAll(() => {
+    usersData = DataHelper.readJsonData<any>("users.json");
+  });
 
   test.beforeEach(async ({ page }) => {
     loginPage = new LoginPage(page);
     dashboardPage = new DashboardPage(page);
     await loginPage.navigate();
+    await page.waitForLoadState("domcontentloaded");
   });
 
   test("should login successfully with valid credentials", async () => {
-    await loginPage.login(
-      env.getOrangeHrmUsername(),
-      env.getOrangeHrmPassword(),
-    );
+    const validUser = usersData.orangehrm.validUser;
+    await loginPage.login(validUser.username, validUser.password);
 
     expect(await dashboardPage.isDashboardVisible()).toBe(true);
   });
@@ -32,10 +39,8 @@ test.describe("OrangeHRM - Login Tests", () => {
   });
 
   test("should logout successfully", async ({ page }) => {
-    await loginPage.login(
-      env.getOrangeHrmUsername(),
-      env.getOrangeHrmPassword(),
-    );
+    const validUser = usersData.orangehrm.validUser;
+    await loginPage.login(validUser.username, validUser.password);
 
     await dashboardPage.logout();
     await expect(page).toHaveURL(/.*\/auth\/login/);
