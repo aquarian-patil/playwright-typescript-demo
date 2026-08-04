@@ -70,7 +70,9 @@ export class ProductsPage extends BasePage {
    */
   async logout(): Promise<void> {
     await this.click(this.menuButton);
-    // Menu takes time to animate on mobile, force click bypasses visibility checks
-    await this.logoutLink.click({ force: true });
+    // Menu takes time to animate and slide into the viewport. 
+    // We must wait for the transition to finish so Playwright can physically click it.
+    await this.page.waitForTimeout(1000);
+    await this.logoutLink.click();
   }
 }

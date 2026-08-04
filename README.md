@@ -316,13 +316,9 @@ npm run type-check
 
 ---
 
-MIT
-
----
-
 ## 👤 Author
 
-Nitin Patil
+Nithin Patil
 
 ---
 
