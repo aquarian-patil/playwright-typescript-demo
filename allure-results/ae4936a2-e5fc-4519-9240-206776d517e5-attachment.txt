@@ -1,6 +1,0 @@
-2026-08-03 20:55:55 [info]: Navigating to https://opensource-demo.orangehrmlive.com
-2026-08-03 20:56:11 [info]: Page loaded successfully
-2026-08-03 20:56:11 [info]: Logging in as: Admin
-2026-08-03 20:56:42 [warn]: Network idle timeout, checking if page is loaded...
-2026-08-03 20:56:43 [info]: Page loaded (without network idle)
-2026-08-03 20:56:53 [error]: Dashboard visibility check failed: TimeoutError: page.waitForLoadState: Timeout 10000ms exceeded.

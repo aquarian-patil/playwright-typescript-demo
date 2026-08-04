@@ -1,6 +1,0 @@
-2026-08-03 22:06:18 [info]: Navigating to https://opensource-demo.orangehrmlive.com
-2026-08-03 22:06:21 [error]: Navigation failed: Error: page.goto: net::ERR_EMPTY_RESPONSE at https://opensource-demo.orangehrmlive.com/
-Call log:
-  - navigating to "https://opensource-demo.orangehrmlive.com/", waiting until "domcontentloaded"
-
-2026-08-03 22:06:21 [info]: Retrying navigation...

@@ -1,4 +1,0 @@
-2026-08-03 20:43:23 [info]: Navigating to https://www.saucedemo.com
-2026-08-03 20:43:36 [info]: Page loaded successfully
-2026-08-03 20:43:36 [info]: Logging in as: standard_user
-2026-08-03 20:43:39 [info]: Page loaded successfully
