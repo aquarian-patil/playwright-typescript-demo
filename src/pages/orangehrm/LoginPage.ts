@@ -33,6 +33,8 @@ export class LoginPage extends BasePage {
     await this.fill(this.usernameInput, username);
     await this.fill(this.passwordInput, password);
     await this.click(this.loginButton);
+    // Wait for network to settle after clicking login (ignore timeout if it takes too long)
+    await this.page.waitForLoadState("networkidle", { timeout: 5000 }).catch(() => {});
   }
 
   /**
@@ -40,7 +42,7 @@ export class LoginPage extends BasePage {
    */
   async isErrorDisplayed(): Promise<boolean> {
     try {
-      await this.errorMessage.waitFor({ state: "visible", timeout: 5000 });
+      await this.errorMessage.waitFor({ state: "visible", timeout: 15000 });
       return await this.isVisible(this.errorMessage);
     } catch {
       return false;

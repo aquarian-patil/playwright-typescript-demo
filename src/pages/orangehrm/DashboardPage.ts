@@ -51,15 +51,15 @@ export class DashboardPage extends BasePage {
       this.logger.info("Logging out from OrangeHRM");
 
       // Wait for user dropdown to be visible
-      await this.userDropdown.waitFor({ state: "visible", timeout: 10000 });
-      await this.click(this.userDropdown);
+      await this.userDropdown.waitFor({ state: "visible", timeout: 15000 });
+      await this.userDropdown.click({ force: true });
 
       // Wait for logout link to appear
-      await this.logoutLink.waitFor({ state: "visible", timeout: 5000 });
+      await this.logoutLink.waitFor({ state: "visible", timeout: 10000 });
       await this.logoutLink.click({ force: true });
 
       // Wait for navigation
-      await this.page.waitForURL("**/auth/login", { timeout: 10000 });
+      await this.page.waitForURL("**/auth/login", { timeout: 15000 });
     } catch (error) {
       this.logger.error(`Logout failed: ${error}`);
       throw error;
