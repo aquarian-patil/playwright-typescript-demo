@@ -12,6 +12,7 @@ playwright-report/
 allure-results/
 allure-report/
 html-report/
+reports/
 coverage/
 .nyc_output/
 *.lcov
