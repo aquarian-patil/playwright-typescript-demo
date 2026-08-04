@@ -96,7 +96,7 @@ test.describe("Swagger Petstore API Tests", () => {
     });
 
     test("should handle non-existent pet ID gracefully", async () => {
-      const nonExistentId = 999999999;
+      const nonExistentId = -Math.floor(Math.random() * 1000000) - 1; // Negative ID to ensure 404
 
       try {
         await client.getPetById(nonExistentId);

@@ -15,14 +15,7 @@ export default defineConfig({
     ["list"],
     ["json", { outputFile: "reports/test-results.json" }],
     ["junit", { outputFile: "reports/junit-results.xml" }],
-    [
-      "allure-playwright",
-      {
-        detail: true,
-        outputFolder: "allure-results",
-        suiteTitle: false,
-      },
-    ],
+    ["playwright-ctrf-json-reporter", {}],
   ],
   use: {
     baseURL: process.env.BASE_URL ?? "https://www.saucedemo.com",

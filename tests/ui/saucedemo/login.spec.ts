@@ -1,44 +1,75 @@
-import { test, expect } from "@playwright/test";
-import { LoginPage } from "../../../src/pages/saucedemo/LoginPage";
-import { ProductsPage } from "../../../src/pages/saucedemo/ProductsPage";
+import { test, expect } from "../../../src/fixtures/uiFixtures";
 import { EnvironmentManager } from "../../../src/config/EnvironmentManager";
+import { DataHelper } from "../../../src/helpers/DataHelper";
+import { allure } from "allure-playwright";
 
 test.describe("SauceDemo - Login Tests", () => {
-  let loginPage: LoginPage;
-  let productsPage: ProductsPage;
   const env = EnvironmentManager.getInstance();
+  let usersData: any;
 
-  test.beforeEach(async ({ page }) => {
-    loginPage = new LoginPage(page);
-    productsPage = new ProductsPage(page);
-    await loginPage.navigate();
+  test.beforeAll(() => {
+    // Read data for data-driven testing
+    usersData = DataHelper.readJsonData<any>("users.json");
   });
 
-  test("should login successfully with valid credentials", async () => {
-    await loginPage.login(
-      env.getSauceDemoUsername(),
-      env.getSauceDemoPassword(),
-    );
-
-    await expect(productsPage.pageTitle).toBeVisible();
-    expect(await productsPage.isProductsPageDisplayed()).toBe(true);
+  test.beforeEach(async ({ sdLoginPage }) => {
+    await sdLoginPage.navigate();
   });
 
-  test("should show error with invalid credentials", async () => {
-    await loginPage.login("invalid_user", "invalid_password");
+  test("should login successfully with valid credentials", async ({ sdLoginPage, sdProductsPage }) => {
+    allure.epic("UI Authentication");
+    allure.feature("Login");
+    allure.severity("critical");
+    allure.owner("nitpatil");
+    allure.tags("Smoke", "UI", "SauceDemo");
 
-    expect(await loginPage.isErrorDisplayed()).toBe(true);
-    const errorText = await loginPage.getErrorMessage();
-    expect(errorText).toContain("Username and password do not match");
+    const validUser = usersData.saucedemo.validUser;
+    
+    await allure.step("Enter valid credentials and submit", async () => {
+      await sdLoginPage.login(validUser.username, validUser.password);
+    });
+
+    await allure.step("Verify products page is displayed", async () => {
+      await expect(sdProductsPage.pageTitle).toBeVisible();
+      expect(await sdProductsPage.isProductsPageDisplayed()).toBe(true);
+    });
   });
 
-  test("should logout successfully", async ({ page }) => {
-    await loginPage.login(
-      env.getSauceDemoUsername(),
-      env.getSauceDemoPassword(),
-    );
+  test("should show error with invalid credentials", async ({ sdLoginPage }) => {
+    allure.epic("UI Authentication");
+    allure.feature("Login");
+    allure.severity("normal");
+    
+    const invalidUser = usersData.saucedemo.invalidUser;
 
-    await productsPage.logout();
-    await expect(page).toHaveURL(/.*saucedemo.com\/?$/);
+    await allure.step("Enter invalid credentials and submit", async () => {
+      await sdLoginPage.login(invalidUser.username, invalidUser.password);
+    });
+
+    await allure.step("Verify error message", async () => {
+      expect(await sdLoginPage.isErrorDisplayed()).toBe(true);
+      const errorText = await sdLoginPage.getErrorMessage();
+      expect(errorText).toContain("Username and password do not match");
+    });
+  });
+
+  test("should logout successfully", async ({ page, sdLoginPage, sdProductsPage }) => {
+    allure.epic("UI Authentication");
+    allure.feature("Logout");
+    allure.severity("critical");
+
+    const validUser = usersData.saucedemo.validUser;
+    
+    await allure.step("Login first", async () => {
+      await sdLoginPage.login(validUser.username, validUser.password);
+    });
+
+    await allure.step("Perform logout", async () => {
+      await sdProductsPage.logout();
+    });
+
+    await allure.step("Verify redirection to login page", async () => {
+      await expect(page).toHaveURL(/.*saucedemo.com\/?$/);
+    });
   });
 });

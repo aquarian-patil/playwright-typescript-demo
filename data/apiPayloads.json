@@ -1,0 +1,22 @@
+{
+  "reqres": {
+    "newUser": {
+      "name": "Portfolio User",
+      "job": "Automation Architect"
+    },
+    "updatedUser": {
+      "name": "Portfolio User",
+      "job": "Principal Automation Architect"
+    }
+  },
+  "petstore": {
+    "newPet": {
+      "id": 987654321,
+      "category": { "id": 1, "name": "Dogs" },
+      "name": "ShowcaseDog",
+      "photoUrls": ["string"],
+      "tags": [{ "id": 1, "name": "portfolio" }],
+      "status": "available"
+    }
+  }
+}

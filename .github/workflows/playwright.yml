@@ -41,6 +41,10 @@ jobs:
         run: npx playwright test --project=${{ matrix.browser }} --shard=${{ matrix.shard }}
         env:
           CI: true
+          REQRES_API_KEY: ${{ secrets.REQRES_API_KEY }}
+          ORANGEHRM_PASSWORD: ${{ secrets.ORANGEHRM_PASSWORD }}
+          SAUCEDEMO_PASSWORD: ${{ secrets.SAUCEDEMO_PASSWORD }}
+          DUMMYJSON_PASSWORD: ${{ secrets.DUMMYJSON_PASSWORD }}
 
       - name: Upload test results
         if: always()
@@ -50,50 +54,44 @@ jobs:
           path: playwright-report/
           retention-days: 30
 
-      - name: Upload test artifacts
+      - name: Upload CTRF report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: test-results-${{ matrix.browser }}-${{ matrix.shard }}
-          path: test-results/
+          name: ctrf-report-${{ matrix.browser }}-${{ matrix.shard }}
+          path: ctrf/
           retention-days: 30
 
-      - name: Upload Allure results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-results-${{ matrix.browser }}-${{ matrix.shard }}
-          path: allure-results/
-          retention-days: 30
-
-  report:
-    name: Generate Allure Report
+  publish-report:
+    name: Publish Test Report
     if: always()
     needs: test
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Download Allure results
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download CTRF results
         uses: actions/download-artifact@v4
         with:
-          path: allure-results
-          pattern: allure-results-*
+          path: ctrf-reports
+          pattern: ctrf-report-*
           merge-multiple: true
 
-      - name: Generate Allure report
-        uses: simple-elf/allure-report-action@master
-        with:
-          allure_results: allure-results
-          allure_report: allure-report
-          gh_pages: gh-pages
-          allure_history: allure-history
+      - name: Merge CTRF Reports
+        run: npx ctrf merge ctrf-reports/
 
-      - name: Deploy Allure report to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Publish CTRF Test Summary Results
+        uses: ctrf-io/github-test-reporter@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: allure-history
+          report-path: ctrf-reports/ctrf-report.json

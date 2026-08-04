@@ -1,5 +1,6 @@
 import { Page, Locator } from "@playwright/test";
 import { BasePage } from "../../base/BasePage";
+import { SauceDemoLocators } from "../../locators/SauceDemoLocators";
 
 /**
  * ProductsPage - SauceDemo products page object
@@ -16,18 +17,18 @@ export class ProductsPage extends BasePage {
     super(page);
 
     // Locators
-    this.inventoryContainer = page.locator(".inventory_container");
-    this.inventoryItems = page.locator(".inventory_item");
-    this.cartBadge = page.locator(".shopping_cart_badge");
-    this.menuButton = page.locator("#react-burger-menu-btn");
-    this.logoutLink = page.locator("#logout_sidebar_link");
+    this.inventoryContainer = page.locator(SauceDemoLocators.PRODUCTS.INVENTORY_CONTAINER);
+    this.inventoryItems = page.locator(SauceDemoLocators.PRODUCTS.PRODUCT_ITEM);
+    this.cartBadge = page.locator(SauceDemoLocators.PRODUCTS.CART_BADGE);
+    this.menuButton = page.locator(SauceDemoLocators.HEADER.MENU_BUTTON);
+    this.logoutLink = page.locator(SauceDemoLocators.HEADER.LOGOUT_LINK);
   }
 
   /**
    * Get page title
    */
   get pageTitle(): Locator {
-    return this.page.locator(".title");
+    return this.page.locator(SauceDemoLocators.PRODUCTS.PAGE_TITLE);
   }
 
   /**
@@ -69,7 +70,7 @@ export class ProductsPage extends BasePage {
    */
   async logout(): Promise<void> {
     await this.click(this.menuButton);
-    await this.waitForVisible(this.logoutLink);
-    await this.click(this.logoutLink);
+    // Menu takes time to animate on mobile, force click bypasses visibility checks
+    await this.logoutLink.click({ force: true });
   }
 }

@@ -1,6 +1,7 @@
 import { Page, Locator } from "@playwright/test";
 import { BasePage } from "../../base/BasePage";
 import { EnvironmentManager } from "../../config/EnvironmentManager";
+import { OrangeHrmLocators } from "../../locators/OrangeHrmLocators";
 
 /**
  * LoginPage - OrangeHRM login page object
@@ -18,10 +19,10 @@ export class LoginPage extends BasePage {
     this.url = `${env.getOrangeHrmUrl()}/web/index.php/auth/login`;
 
     // Locators
-    this.usernameInput = page.locator('input[name="username"]');
-    this.passwordInput = page.locator('input[name="password"]');
-    this.loginButton = page.locator('button[type="submit"]');
-    this.errorMessage = page.locator(".oxd-alert-content-text");
+    this.usernameInput = page.locator(OrangeHrmLocators.LOGIN.USERNAME_INPUT);
+    this.passwordInput = page.locator(OrangeHrmLocators.LOGIN.PASSWORD_INPUT);
+    this.loginButton = page.locator(OrangeHrmLocators.LOGIN.LOGIN_BUTTON);
+    this.errorMessage = page.locator(OrangeHrmLocators.LOGIN.ERROR_MESSAGE);
   }
 
   /**

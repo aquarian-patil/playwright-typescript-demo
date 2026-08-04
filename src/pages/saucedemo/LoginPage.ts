@@ -1,6 +1,7 @@
 import { Page, Locator } from "@playwright/test";
 import { BasePage } from "../../base/BasePage";
 import { EnvironmentManager } from "../../config/EnvironmentManager";
+import { SauceDemoLocators } from "../../locators/SauceDemoLocators";
 
 /**
  * LoginPage - SauceDemo login page object
@@ -18,10 +19,10 @@ export class LoginPage extends BasePage {
     this.url = env.getSauceDemoUrl();
 
     // Locators
-    this.usernameInput = page.locator("#user-name");
-    this.passwordInput = page.locator("#password");
-    this.loginButton = page.locator("#login-button");
-    this.errorMessage = page.locator('[data-test="error"]');
+    this.usernameInput = page.locator(SauceDemoLocators.LOGIN.USERNAME_INPUT);
+    this.passwordInput = page.locator(SauceDemoLocators.LOGIN.PASSWORD_INPUT);
+    this.loginButton = page.locator(SauceDemoLocators.LOGIN.LOGIN_BUTTON);
+    this.errorMessage = page.locator(SauceDemoLocators.LOGIN.ERROR_MESSAGE);
   }
 
   /**

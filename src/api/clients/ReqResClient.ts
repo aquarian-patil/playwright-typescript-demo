@@ -10,10 +10,13 @@ export class ReqResClient extends BaseApiClient {
     const env = EnvironmentManager.getInstance();
     super(env.getReqResApiUrl());
 
-    // Add API key if available
+    // Add API key via interceptor
     const apiKey = env.getReqResApiKey();
     if (apiKey) {
-      this.client.defaults.headers.common["x-api-key"] = apiKey;
+      this.client.interceptors.request.use((config) => {
+        config.headers["x-api-key"] = apiKey;
+        return config;
+      });
     }
   }
 

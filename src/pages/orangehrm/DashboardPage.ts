@@ -1,6 +1,7 @@
 import { Page, Locator } from "@playwright/test";
 import { BasePage } from "../../base/BasePage";
 import { EnvironmentManager } from "../../config/EnvironmentManager";
+import { OrangeHrmLocators } from "../../locators/OrangeHrmLocators";
 
 /**
  * DashboardPage - OrangeHRM dashboard page object
@@ -18,10 +19,10 @@ export class DashboardPage extends BasePage {
     this.url = `${env.getOrangeHrmUrl()}/web/index.php/dashboard/index`;
 
     // Locators
-    this.dashboardHeader = page.locator(".oxd-topbar-header-breadcrumb");
-    this.userDropdown = page.locator(".oxd-userdropdown-tab");
-    this.logoutLink = page.locator('a[href="/web/index.php/auth/logout"]');
-    this.mainMenu = page.locator(".oxd-main-menu");
+    this.dashboardHeader = page.locator(OrangeHrmLocators.DASHBOARD.HEADER_TITLE);
+    this.userDropdown = page.locator(OrangeHrmLocators.HEADER.USER_DROPDOWN);
+    this.logoutLink = page.locator(OrangeHrmLocators.HEADER.LOGOUT_LINK);
+    this.mainMenu = page.locator(OrangeHrmLocators.DASHBOARD.MAIN_MENU);
   }
 
   /**

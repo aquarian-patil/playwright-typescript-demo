@@ -6,16 +6,17 @@ Production-ready Quality Engineering automation framework built with **Playwrigh
 
 ### 🎯 Key Features
 
-✅ **Page Object Model (POM)** - Maintainable page objects
+✅ **Page Object Model (POM)** - Maintainable page objects with Centralized Locators
 ✅ **Type-Safe TypeScript** - Interfaces, enums, generics
-✅ **Multi-Browser Support** - Chrome, Firefox, Safari
-✅ **Parallel Execution** - Configurable workers
-✅ **Multiple Reporters** - HTML, Allure, JSON, JUnit
+✅ **Custom Fixtures** - Dependency injection for API clients and UI pages
+✅ **Multi-Browser Support** - Chrome, Firefox, Safari, Mobile viewports
+✅ **Parallel Execution** - Configurable matrix shards
+✅ **Visually Stunning Reports** - CTRF Native GitHub Dashboards
 ✅ **Winston Logging** - Daily log rotation
-✅ **Environment Management** - Multi-environment support
-✅ **API Automation** - Axios-based API client
-✅ **Data-Driven Testing** - JSON, Faker
-✅ **CI/CD Ready** - GitHub Actions compatible
+✅ **Environment Management** - Multi-environment support via `.env`
+✅ **API Automation** - Axios-based API client with Interceptors
+✅ **Data-Driven Testing** - JSON Datasets, Faker
+✅ **CI/CD Ready** - Fully automated GitHub Actions workflow
 
 ---
 
@@ -28,7 +29,7 @@ Production-ready Quality Engineering automation framework built with **Playwrigh
 - **Axios** (API Client)
 - **ESLint** & **Prettier** (Code Quality)
 - **Husky** (Git Hooks)
-- **Allure** (Reporting)
+- **CTRF** (Reporting)
 - **Faker** (Test Data)
 
 ---
@@ -103,11 +104,14 @@ npm run test:headed
 npm run test:report
 ```
 
-### Allure Report
+### CTRF Report (GitHub Actions)
+
+The framework natively integrates with `playwright-ctrf-json-reporter` to render visually stunning summary dashboards directly inside the GitHub PR or Workflow run.
 
 ```bash
-npm run allure:generate
-npm run allure:open
+# Generate CTRF report locally
+npm test
+# Report is saved in ctrf/ctrf-report.json
 ```
 
 ---
@@ -123,11 +127,9 @@ Comprehensive API testing framework with **60 tests** across **4 API application
 | **DummyJSON**       | 10    | ❌ No         | ✅ FREE     |
 | **JSONPlaceholder** | 25    | ❌ No         | ✅ FREE     |
 | **Petstore**        | 20    | ❌ No         | ✅ FREE     |
-| **ReqRes**          | 6     | ✅ Yes*       | ⚠️ Optional |
+| **ReqRes**          | 6     | ✅ Yes       | ✅ PROVISIONED |
 
-**54 tests (90%) run without any configuration!**
-
-*ReqRes tests skip gracefully if no API key is configured.
+**60 tests (100%) run seamlessly out of the box when secrets are configured!**
 
 ### Quick Start
 
@@ -139,7 +141,7 @@ npm run test:api
 npx playwright test tests/api/dummyjson.spec.ts
 npx playwright test tests/api/jsonplaceholder.spec.ts
 npx playwright test tests/api/petstore.spec.ts
-npx playwright test tests/api/reqres.spec.ts  # Skips if no API key
+npx playwright test tests/api/reqres.spec.ts
 ```
 
 ### API Applications
@@ -188,8 +190,6 @@ npx playwright test tests/api/reqres.spec.ts  # Skips if no API key
 
 - ✅ Users CRUD
 - ✅ Authentication
-
-**Note:** Requires API key. Tests skip gracefully if not configured.
 
 ---
 
@@ -246,7 +246,10 @@ playwright-typescript-demo/
 │   │   └── Logger.ts
 │   ├── enums/
 │   ├── fixtures/
+│   │   ├── apiFixtures.ts
+│   │   └── uiFixtures.ts
 │   ├── helpers/
+│   │   └── DataHelper.ts
 │   ├── interfaces/
 │   │   └── IApiResponse.ts
 │   ├── locators/
@@ -305,13 +308,11 @@ npm run type-check
 
 ## 🚀 CI/CD Ready
 
-✅ **54 API tests run without any configuration**
+✅ **100% Fully Automated Pipeline**
 
-- No environment variables required
-- No API keys needed
-- Perfect for CI/CD pipelines
-
-⏭️ **6 ReqRes tests skip gracefully** when API key not configured
+- Configured GitHub Actions matrix execution
+- Securely injects UI and API credentials via GitHub Secrets
+- Merges multiple test shards into a single visually stunning CTRF dashboard summary
 
 ---
 
