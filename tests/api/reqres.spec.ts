@@ -1,7 +1,6 @@
 import { test, expect } from "../../src/fixtures/apiFixtures";
 import { EnvironmentManager } from "../../src/config/EnvironmentManager";
 import { DataHelper } from "../../src/helpers/DataHelper";
-import { allure } from "allure-playwright";
 
 test.describe("ReqRes API Tests", () => {
   const env = EnvironmentManager.getInstance();
@@ -15,17 +14,19 @@ test.describe("ReqRes API Tests", () => {
   });
 
   test("should get list of users", async ({ reqResClient }) => {
-    allure.epic("API");
-    allure.feature("ReqRes Users");
-    allure.severity("critical");
-    allure.tags("API", "ReqRes", "Smoke");
+    test.info().annotations.push({ type: 'epic', description: "API" });
+    test.info().annotations.push({ type: 'feature', description: "ReqRes Users" });
+    test.info().annotations.push({ type: 'severity', description: "critical" });
+    test.info().annotations.push({ type: 'tag', description: "API" });
+    test.info().annotations.push({ type: 'tag', description: "ReqRes" });
+    test.info().annotations.push({ type: 'tag', description: "Smoke" });
 
     let response: any;
-    await allure.step("Fetch users list from page 1", async () => {
+    await test.step("Fetch users list from page 1", async () => {
       response = await reqResClient.getUsers(1);
     });
 
-    await allure.step("Verify response status and data structure", async () => {
+    await test.step("Verify response status and data structure", async () => {
       expect(response.status).toBe(200);
       expect(response.data).toHaveProperty("data");
       expect(Array.isArray(response.data.data)).toBe(true);
@@ -33,16 +34,16 @@ test.describe("ReqRes API Tests", () => {
   });
 
   test("should get single user by ID", async ({ reqResClient }) => {
-    allure.epic("API");
-    allure.feature("ReqRes Users");
-    allure.severity("normal");
+    test.info().annotations.push({ type: 'epic', description: "API" });
+    test.info().annotations.push({ type: 'feature', description: "ReqRes Users" });
+    test.info().annotations.push({ type: 'severity', description: "normal" });
 
     let response: any;
-    await allure.step("Fetch user with ID 2", async () => {
+    await test.step("Fetch user with ID 2", async () => {
       response = await reqResClient.getUserById(2);
     });
 
-    await allure.step("Verify user ID matches", async () => {
+    await test.step("Verify user ID matches", async () => {
       expect(response.status).toBe(200);
       expect(response.data).toHaveProperty("data");
       expect(response.data.data).toHaveProperty("id", 2);
@@ -50,18 +51,18 @@ test.describe("ReqRes API Tests", () => {
   });
 
   test("should create new user", async ({ reqResClient }) => {
-    allure.epic("API");
-    allure.feature("ReqRes Users");
-    allure.severity("critical");
+    test.info().annotations.push({ type: 'epic', description: "API" });
+    test.info().annotations.push({ type: 'feature', description: "ReqRes Users" });
+    test.info().annotations.push({ type: 'severity', description: "critical" });
 
     const newUser = payloads.reqres.newUser;
     let response: any;
 
-    await allure.step("Send POST request to create user", async () => {
+    await test.step("Send POST request to create user", async () => {
       response = await reqResClient.createUser(newUser);
     });
 
-    await allure.step("Verify user is created", async () => {
+    await test.step("Verify user is created", async () => {
       expect(response.status).toBe(201);
       expect(response.data).toHaveProperty("name", newUser.name);
       expect(response.data).toHaveProperty("job", newUser.job);
@@ -70,18 +71,18 @@ test.describe("ReqRes API Tests", () => {
   });
 
   test("should update user", async ({ reqResClient }) => {
-    allure.epic("API");
-    allure.feature("ReqRes Users");
-    allure.severity("normal");
+    test.info().annotations.push({ type: 'epic', description: "API" });
+    test.info().annotations.push({ type: 'feature', description: "ReqRes Users" });
+    test.info().annotations.push({ type: 'severity', description: "normal" });
 
     const updatedUser = payloads.reqres.updatedUser;
     let response: any;
 
-    await allure.step("Send PUT request to update user 2", async () => {
+    await test.step("Send PUT request to update user 2", async () => {
       response = await reqResClient.updateUser(2, updatedUser);
     });
 
-    await allure.step("Verify user is updated", async () => {
+    await test.step("Verify user is updated", async () => {
       expect(response.status).toBe(200);
       expect(response.data).toHaveProperty("name", updatedUser.name);
       expect(response.data).toHaveProperty("job", updatedUser.job);
@@ -89,25 +90,25 @@ test.describe("ReqRes API Tests", () => {
   });
 
   test("should delete user", async ({ reqResClient }) => {
-    allure.epic("API");
-    allure.feature("ReqRes Users");
-    allure.severity("normal");
+    test.info().annotations.push({ type: 'epic', description: "API" });
+    test.info().annotations.push({ type: 'feature', description: "ReqRes Users" });
+    test.info().annotations.push({ type: 'severity', description: "normal" });
 
     let response: any;
-    await allure.step("Send DELETE request for user 2", async () => {
+    await test.step("Send DELETE request for user 2", async () => {
       response = await reqResClient.deleteUser(2);
     });
 
-    await allure.step("Verify deletion status 204", async () => {
+    await test.step("Verify deletion status 204", async () => {
       expect(response.status).toBe(204);
     });
   });
 
   test("should login successfully", async ({ reqResClient }) => {
-    allure.epic("API Authentication");
-    allure.feature("ReqRes Login");
-    allure.severity("blocker");
-    allure.tags("Security");
+    test.info().annotations.push({ type: 'epic', description: "API Authentication" });
+    test.info().annotations.push({ type: 'feature', description: "ReqRes Login" });
+    test.info().annotations.push({ type: 'severity', description: "blocker" });
+    test.info().annotations.push({ type: 'tag', description: "Security" });
 
     const credentials = {
       email: "eve.holt@reqres.in",
@@ -115,11 +116,11 @@ test.describe("ReqRes API Tests", () => {
     };
 
     let response: any;
-    await allure.step("Send login credentials", async () => {
+    await test.step("Send login credentials", async () => {
       response = await reqResClient.login(credentials);
     });
 
-    await allure.step("Verify token is returned", async () => {
+    await test.step("Verify token is returned", async () => {
       expect(response.status).toBe(200);
       expect(response.data).toHaveProperty("token");
     });
