@@ -15,7 +15,7 @@ test.describe("SauceDemo - Login Tests", () => {
     await sdLoginPage.navigate();
   });
 
-  test("should login successfully with valid credentials", async ({ sdLoginPage, sdProductsPage }) => {
+  test("[UI] [SauceDemo] should login successfully with valid credentials", async ({ sdLoginPage, sdProductsPage }) => {
     test.info().annotations.push({ type: 'epic', description: "UI Authentication" });
     test.info().annotations.push({ type: 'feature', description: "Login" });
     test.info().annotations.push({ type: 'severity', description: "critical" });
@@ -36,7 +36,7 @@ test.describe("SauceDemo - Login Tests", () => {
     });
   });
 
-  test("should show error with invalid credentials", async ({ sdLoginPage }) => {
+  test("[UI] [SauceDemo] should show error with invalid credentials", async ({ sdLoginPage }) => {
     test.info().annotations.push({ type: 'epic', description: "UI Authentication" });
     test.info().annotations.push({ type: 'feature', description: "Login" });
     test.info().annotations.push({ type: 'severity', description: "normal" });
@@ -54,7 +54,7 @@ test.describe("SauceDemo - Login Tests", () => {
     });
   });
 
-  test("should logout successfully", async ({ page, sdLoginPage, sdProductsPage }) => {
+  test("[UI] [SauceDemo] should logout successfully", async ({ page, sdLoginPage, sdProductsPage }) => {
     test.info().annotations.push({ type: 'epic', description: "UI Authentication" });
     test.info().annotations.push({ type: 'feature', description: "Logout" });
     test.info().annotations.push({ type: 'severity', description: "critical" });

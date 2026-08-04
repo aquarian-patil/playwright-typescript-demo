@@ -13,7 +13,7 @@ test.describe("ReqRes API Tests", () => {
     payloads = DataHelper.readJsonData<any>("apiPayloads.json");
   });
 
-  test("should get list of users", async ({ reqResClient }) => {
+  test("[API] [ReqRes] should get list of users", async ({ reqResClient }) => {
     test.info().annotations.push({ type: 'epic', description: "API" });
     test.info().annotations.push({ type: 'feature', description: "ReqRes Users" });
     test.info().annotations.push({ type: 'severity', description: "critical" });
@@ -33,7 +33,7 @@ test.describe("ReqRes API Tests", () => {
     });
   });
 
-  test("should get single user by ID", async ({ reqResClient }) => {
+  test("[API] [ReqRes] should get single user by ID", async ({ reqResClient }) => {
     test.info().annotations.push({ type: 'epic', description: "API" });
     test.info().annotations.push({ type: 'feature', description: "ReqRes Users" });
     test.info().annotations.push({ type: 'severity', description: "normal" });
@@ -50,7 +50,7 @@ test.describe("ReqRes API Tests", () => {
     });
   });
 
-  test("should create new user", async ({ reqResClient }) => {
+  test("[API] [ReqRes] should create new user", async ({ reqResClient }) => {
     test.info().annotations.push({ type: 'epic', description: "API" });
     test.info().annotations.push({ type: 'feature', description: "ReqRes Users" });
     test.info().annotations.push({ type: 'severity', description: "critical" });
@@ -70,7 +70,7 @@ test.describe("ReqRes API Tests", () => {
     });
   });
 
-  test("should update user", async ({ reqResClient }) => {
+  test("[API] [ReqRes] should update user", async ({ reqResClient }) => {
     test.info().annotations.push({ type: 'epic', description: "API" });
     test.info().annotations.push({ type: 'feature', description: "ReqRes Users" });
     test.info().annotations.push({ type: 'severity', description: "normal" });
@@ -89,7 +89,7 @@ test.describe("ReqRes API Tests", () => {
     });
   });
 
-  test("should delete user", async ({ reqResClient }) => {
+  test("[API] [ReqRes] should delete user", async ({ reqResClient }) => {
     test.info().annotations.push({ type: 'epic', description: "API" });
     test.info().annotations.push({ type: 'feature', description: "ReqRes Users" });
     test.info().annotations.push({ type: 'severity', description: "normal" });
@@ -104,7 +104,7 @@ test.describe("ReqRes API Tests", () => {
     });
   });
 
-  test("should login successfully", async ({ reqResClient }) => {
+  test("[API] [ReqRes] should login successfully", async ({ reqResClient }) => {
     test.info().annotations.push({ type: 'epic', description: "API Authentication" });
     test.info().annotations.push({ type: 'feature', description: "ReqRes Login" });
     test.info().annotations.push({ type: 'severity', description: "blocker" });

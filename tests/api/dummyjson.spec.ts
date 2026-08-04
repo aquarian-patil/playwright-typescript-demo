@@ -9,7 +9,7 @@ test.describe("DummyJSON API Tests", () => {
   });
 
   test.describe("Authentication", () => {
-    test("should login with valid credentials", async () => {
+    test("[API] [DummyJSON] should login with valid credentials", async () => {
       const response = await client.login({
         username: "emilys",
         password: "emilyspass",
@@ -21,7 +21,7 @@ test.describe("DummyJSON API Tests", () => {
       expect(response.data).toHaveProperty("firstName");
     });
 
-    test("should fail login with invalid credentials", async () => {
+    test("[API] [DummyJSON] should fail login with invalid credentials", async () => {
       try {
         await client.login({
           username: "invalid_user",
@@ -37,7 +37,7 @@ test.describe("DummyJSON API Tests", () => {
   });
 
   test.describe("Products API", () => {
-    test("should get list of products", async () => {
+    test("[API] [DummyJSON] should get list of products", async () => {
       const response = await client.getProducts();
 
       expect(response.status).toBe(200);
@@ -46,7 +46,7 @@ test.describe("DummyJSON API Tests", () => {
       expect(response.data.products.length).toBeGreaterThan(0);
     });
 
-    test("should get product by ID", async () => {
+    test("[API] [DummyJSON] should get product by ID", async () => {
       const response = await client.getProductById(1);
 
       expect(response.status).toBe(200);
@@ -55,7 +55,7 @@ test.describe("DummyJSON API Tests", () => {
       expect(response.data).toHaveProperty("price");
     });
 
-    test("should handle non-existent product ID gracefully", async () => {
+    test("[API] [DummyJSON] should handle non-existent product ID gracefully", async () => {
       const nonExistentId = 999999;
 
       try {
@@ -68,7 +68,7 @@ test.describe("DummyJSON API Tests", () => {
       }
     });
 
-    test("should search products by query", async () => {
+    test("[API] [DummyJSON] should search products by query", async () => {
       const response = await client.searchProducts("phone");
 
       expect(response.status).toBe(200);
@@ -76,7 +76,7 @@ test.describe("DummyJSON API Tests", () => {
       expect(Array.isArray(response.data.products)).toBe(true);
     });
 
-    test("should return empty array for non-matching search query", async () => {
+    test("[API] [DummyJSON] should return empty array for non-matching search query", async () => {
       const response = await client.searchProducts("nonexistentproduct12345");
 
       expect(response.status).toBe(200);
@@ -85,7 +85,7 @@ test.describe("DummyJSON API Tests", () => {
   });
 
   test.describe("Users API", () => {
-    test("should get list of users", async () => {
+    test("[API] [DummyJSON] should get list of users", async () => {
       const response = await client.getUsers();
 
       expect(response.status).toBe(200);
@@ -94,7 +94,7 @@ test.describe("DummyJSON API Tests", () => {
       expect(response.data.users.length).toBeGreaterThan(0);
     });
 
-    test("should get user by ID", async () => {
+    test("[API] [DummyJSON] should get user by ID", async () => {
       const response = await client.getUserById(1);
 
       expect(response.status).toBe(200);
@@ -103,7 +103,7 @@ test.describe("DummyJSON API Tests", () => {
       expect(response.data).toHaveProperty("email");
     });
 
-    test("should handle non-existent user ID gracefully", async () => {
+    test("[API] [DummyJSON] should handle non-existent user ID gracefully", async () => {
       const nonExistentId = 999999;
 
       try {

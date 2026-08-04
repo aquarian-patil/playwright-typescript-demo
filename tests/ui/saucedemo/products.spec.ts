@@ -18,12 +18,12 @@ test.describe("SauceDemo - Products Tests", () => {
     );
   });
 
-  test("should display all products", async () => {
+  test("[UI] [SauceDemo] should display all products", async () => {
     const productCount = await productsPage.getProductCount();
     expect(productCount).toBeGreaterThan(0);
   });
 
-  test("should add product to cart", async () => {
+  test("[UI] [SauceDemo] should add product to cart", async () => {
     await productsPage.addProductToCart("sauce-labs-backpack");
 
     const cartCount = await productsPage.getCartItemCount();

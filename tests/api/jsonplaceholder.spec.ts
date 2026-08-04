@@ -9,7 +9,7 @@ test.describe("JSONPlaceholder API Tests", () => {
   });
 
   test.describe("Posts API - CRUD Operations", () => {
-    test("should get all posts", async () => {
+    test("[API] [JSONPlaceholder] should get all posts", async () => {
       const response = await client.getPosts();
 
       expect(response.status).toBe(200);
@@ -17,7 +17,7 @@ test.describe("JSONPlaceholder API Tests", () => {
       expect(response.data.length).toBeGreaterThan(0);
     });
 
-    test("should get post by ID", async () => {
+    test("[API] [JSONPlaceholder] should get post by ID", async () => {
       const response = await client.getPostById(1);
 
       expect(response.status).toBe(200);
@@ -27,7 +27,7 @@ test.describe("JSONPlaceholder API Tests", () => {
       expect(response.data).toHaveProperty("userId");
     });
 
-    test("should create a new post", async () => {
+    test("[API] [JSONPlaceholder] should create a new post", async () => {
       const newPost = {
         title: "Test Post",
         body: "This is a test post",
@@ -42,7 +42,7 @@ test.describe("JSONPlaceholder API Tests", () => {
       expect(response.data.body).toBe(newPost.body);
     });
 
-    test("should update a post (PUT)", async () => {
+    test("[API] [JSONPlaceholder] should update a post (PUT)", async () => {
       const updatedPost = {
         id: 1,
         title: "Updated Title",
@@ -56,7 +56,7 @@ test.describe("JSONPlaceholder API Tests", () => {
       expect(response.data.title).toBe(updatedPost.title);
     });
 
-    test("should partially update a post (PATCH)", async () => {
+    test("[API] [JSONPlaceholder] should partially update a post (PATCH)", async () => {
       const partialUpdate = {
         title: "Partially Updated Title",
       };
@@ -67,7 +67,7 @@ test.describe("JSONPlaceholder API Tests", () => {
       expect(response.data.title).toBe(partialUpdate.title);
     });
 
-    test("should delete a post", async () => {
+    test("[API] [JSONPlaceholder] should delete a post", async () => {
       const response = await client.deletePost(1);
 
       expect(response.status).toBe(200);
@@ -75,7 +75,7 @@ test.describe("JSONPlaceholder API Tests", () => {
   });
 
   test.describe("Comments API", () => {
-    test("should get all comments", async () => {
+    test("[API] [JSONPlaceholder] should get all comments", async () => {
       const response = await client.getComments();
 
       expect(response.status).toBe(200);
@@ -83,7 +83,7 @@ test.describe("JSONPlaceholder API Tests", () => {
       expect(response.data.length).toBeGreaterThan(0);
     });
 
-    test("should get comments for a specific post", async () => {
+    test("[API] [JSONPlaceholder] should get comments for a specific post", async () => {
       const response = await client.getCommentsByPostId(1);
 
       expect(response.status).toBe(200);
@@ -94,7 +94,7 @@ test.describe("JSONPlaceholder API Tests", () => {
   });
 
   test.describe("Users API", () => {
-    test("should get all users", async () => {
+    test("[API] [JSONPlaceholder] should get all users", async () => {
       const response = await client.getUsers();
 
       expect(response.status).toBe(200);
@@ -102,7 +102,7 @@ test.describe("JSONPlaceholder API Tests", () => {
       expect(response.data.length).toBeGreaterThan(0);
     });
 
-    test("should get user by ID", async () => {
+    test("[API] [JSONPlaceholder] should get user by ID", async () => {
       const response = await client.getUserById(1);
 
       expect(response.status).toBe(200);
@@ -113,7 +113,7 @@ test.describe("JSONPlaceholder API Tests", () => {
   });
 
   test.describe("Todos API", () => {
-    test("should get all todos", async () => {
+    test("[API] [JSONPlaceholder] should get all todos", async () => {
       const response = await client.getTodos();
 
       expect(response.status).toBe(200);
@@ -121,7 +121,7 @@ test.describe("JSONPlaceholder API Tests", () => {
       expect(response.data.length).toBeGreaterThan(0);
     });
 
-    test("should get todo by ID", async () => {
+    test("[API] [JSONPlaceholder] should get todo by ID", async () => {
       const response = await client.getTodoById(1);
 
       expect(response.status).toBe(200);
@@ -130,7 +130,7 @@ test.describe("JSONPlaceholder API Tests", () => {
       expect(response.data).toHaveProperty("completed");
     });
 
-    test("should create a new todo", async () => {
+    test("[API] [JSONPlaceholder] should create a new todo", async () => {
       const newTodo = {
         title: "Test Todo",
         completed: false,
@@ -146,7 +146,7 @@ test.describe("JSONPlaceholder API Tests", () => {
   });
 
   test.describe("Albums API", () => {
-    test("should get all albums", async () => {
+    test("[API] [JSONPlaceholder] should get all albums", async () => {
       const response = await client.getAlbums();
 
       expect(response.status).toBe(200);
@@ -154,7 +154,7 @@ test.describe("JSONPlaceholder API Tests", () => {
       expect(response.data.length).toBeGreaterThan(0);
     });
 
-    test("should get album by ID", async () => {
+    test("[API] [JSONPlaceholder] should get album by ID", async () => {
       const response = await client.getAlbumById(1);
 
       expect(response.status).toBe(200);
@@ -162,7 +162,7 @@ test.describe("JSONPlaceholder API Tests", () => {
       expect(response.data).toHaveProperty("title");
     });
 
-    test("should get photos from an album", async () => {
+    test("[API] [JSONPlaceholder] should get photos from an album", async () => {
       const response = await client.getPhotosByAlbumId(1);
 
       expect(response.status).toBe(200);

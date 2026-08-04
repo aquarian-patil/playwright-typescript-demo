@@ -23,14 +23,14 @@ test.describe("OrangeHRM - Login Tests", () => {
     await page.waitForLoadState("domcontentloaded");
   });
 
-  test("should login successfully with valid credentials", async () => {
+  test("[UI] [OrangeHRM] should login successfully with valid credentials", async () => {
     const validUser = usersData.orangehrm.validUser;
     await loginPage.login(validUser.username, validUser.password);
 
     expect(await dashboardPage.isDashboardVisible()).toBe(true);
   });
 
-  test("should show error with invalid credentials", async () => {
+  test("[UI] [OrangeHRM] should show error with invalid credentials", async () => {
     await loginPage.login("invalid_user", "invalid_password");
 
     expect(await loginPage.isErrorDisplayed()).toBe(true);
@@ -38,7 +38,7 @@ test.describe("OrangeHRM - Login Tests", () => {
     expect(errorText).toContain("Invalid credentials");
   });
 
-  test("should logout successfully", async ({ page }) => {
+  test("[UI] [OrangeHRM] should logout successfully", async ({ page }) => {
     const validUser = usersData.orangehrm.validUser;
     await loginPage.login(validUser.username, validUser.password);
 
