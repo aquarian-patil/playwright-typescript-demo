@@ -40,6 +40,10 @@ jobs:
           SAUCEDEMO_PASSWORD: ${{ secrets.SAUCEDEMO_PASSWORD }}
           DUMMYJSON_PASSWORD: ${{ secrets.DUMMYJSON_PASSWORD }}
 
+      - name: Sort CTRF Report
+        if: always()
+        run: node scripts/sort-ctrf.js
+
       - name: Publish CTRF Test Summary Results
         if: always()
         uses: ctrf-io/github-test-reporter@v1
