@@ -5,6 +5,8 @@ try {
   const ctrfRaw = fs.readFileSync('ctrf/ctrf-report.json', 'utf8');
   const ctrfData = JSON.parse(ctrfRaw);
   const summary = ctrfData.results.summary;
+  const flakyCount = ctrfData.results.tests.filter(t => t.flaky).length;
+  const durationSecs = ((summary.stop - summary.start) / 1000).toFixed(2);
 
   const repoName = process.env.GITHUB_REPOSITORY || 'aquarian-patil/playwright-typescript-demo';
   const username = repoName.split('/')[0];
@@ -32,9 +34,17 @@ try {
             <td style="padding: 8px 0; font-weight: bold; color: #dc3545;">Failed:</td>
             <td style="padding: 8px 0; text-align: right; color: #dc3545; font-weight: bold;">${summary.failed}</td>
           </tr>
+          <tr style="border-bottom: 1px solid #ddd;">
+            <td style="padding: 8px 0; font-weight: bold; color: #6c757d;">Skipped:</td>
+            <td style="padding: 8px 0; text-align: right; color: #6c757d; font-weight: bold;">${summary.skipped}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #ddd;">
+            <td style="padding: 8px 0; font-weight: bold; color: #fd7e14;">Flaky:</td>
+            <td style="padding: 8px 0; text-align: right; color: #fd7e14; font-weight: bold;">${flakyCount}</td>
+          </tr>
           <tr>
             <td style="padding: 8px 0; font-weight: bold;">Duration:</td>
-            <td style="padding: 8px 0; text-align: right;">${(summary.time / 1000).toFixed(2)}s</td>
+            <td style="padding: 8px 0; text-align: right;">${durationSecs}s</td>
           </tr>
         </table>
       </div>
