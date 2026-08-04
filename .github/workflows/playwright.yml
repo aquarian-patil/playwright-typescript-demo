@@ -61,3 +61,20 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: playwright-report
+
+      - name: Generate HTML Email Body
+        if: always()
+        run: node scripts/generate-email.js
+
+      - name: Send Email Notification
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "Playwright Automation Report"
+          to: nithin.patil@gmail.com, guhan.patil@gmail.com, swethagyhan8@gmail.com, guhanpatil8@gmail.com
+          from: Playwright Bot
+          html_body: file://email-body.html
