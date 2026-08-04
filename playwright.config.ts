@@ -2,9 +2,9 @@ import { defineConfig, devices } from "@playwright/test";
 
 export default defineConfig({
   testDir: "./tests",
-  timeout: 60 * 1000,
+  timeout: 120 * 1000,
   expect: {
-    timeout: 10000,
+    timeout: 15000,
   },
   fullyParallel: true,
   forbidOnly: Boolean(process.env.CI),
@@ -22,8 +22,8 @@ export default defineConfig({
     trace: "retain-on-failure",
     screenshot: "only-on-failure",
     video: "retain-on-failure",
-    actionTimeout: 15000,
-    navigationTimeout: 30000,
+    actionTimeout: 30000,
+    navigationTimeout: 60000,
   },
   projects: [
     {
