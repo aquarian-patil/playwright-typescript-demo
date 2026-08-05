@@ -23,7 +23,7 @@ Production-ready Quality Engineering automation framework built with **Playwrigh
 ## 📱 Other Automation Frameworks
 
 Check out my other enterprise frameworks:
-- **[mobile-native-app-demo](https://github.com/aquarian-patil/mobile-native-app-demo)** - A production-grade framework for **Mobile Native E2E Test Automation** using **WebdriverIO**, **Appium**, and **BrowserStack**, featuring unified CTRF reporting.
+- **[mobile-native-app-automation](https://github.com/aquarian-patil/mobile-native-app-automation)** - A production-grade framework for **Mobile Native E2E Test Automation** using **WebdriverIO**, **Appium**, and **BrowserStack**, featuring unified CTRF reporting.
 
 ---
 
