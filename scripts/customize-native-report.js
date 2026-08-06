@@ -36,13 +36,22 @@ try {
     let monoHtml = fs.readFileSync(monocartPath, 'utf8');
     
     // Inject a floating button to access the native report
-    const floatingBtn = `
-      <a href="./playwright-report/index.html" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #4F46E5; color: white; padding: 12px 24px; border-radius: 8px; font-family: system-ui, sans-serif; text-decoration: none; font-weight: bold; font-size: 14px; z-index: 999999; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: transform 0.2s; cursor: pointer;">
-        🔍 View Deep Debug Report ↗
-      </a>
+    const floatingBtnScript = `
+      <script>
+        window.addEventListener('load', () => {
+          setTimeout(() => {
+            const btn = document.createElement('a');
+            btn.href = './playwright-report/index.html';
+            btn.target = '_blank';
+            btn.innerText = '🔍 View Deep Debug Report ↗';
+            btn.style.cssText = 'position: fixed; bottom: 20px; right: 20px; background-color: #4F46E5; color: white; padding: 12px 24px; border-radius: 8px; font-family: system-ui, sans-serif; text-decoration: none; font-weight: bold; font-size: 14px; z-index: 2147483647; box-shadow: 0 4px 12px rgba(0,0,0,0.3); cursor: pointer;';
+            document.body.appendChild(btn);
+          }, 1000); // Wait for Monocart to finish rendering
+        });
+      </script>
     `;
     
-    monoHtml = monoHtml.replace('</body>', `${floatingBtn}\n</body>`);
+    monoHtml = monoHtml.replace('</body>', `${floatingBtnScript}\n</body>`);
     fs.writeFileSync(monocartPath, monoHtml);
     console.log('Successfully injected floating button into Monocart report.');
   } else {
