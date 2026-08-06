@@ -44,11 +44,9 @@ jobs:
         if: always()
         run: node scripts/sort-ctrf.js
 
-      - name: Publish CTRF Test Summary Results
+      - name: Generate Application Breakdown Summary
         if: always()
-        uses: ctrf-io/github-test-reporter@v1
-        with:
-          report-path: ctrf/ctrf-report.json
+        run: node scripts/generate-github-summary.js
 
       - name: Customize and Combine Reports
         if: always()
