@@ -15,6 +15,14 @@ export default defineConfig({
       name: "Playwright Enterprise QA Dashboard",
       outputFile: "./monocart-report/index.html",
       theme: "dark",
+      customData: {
+          metadata: {
+              "Project": "Playwright E2E Framework",
+              "Environment": process.env.CI ? "CI Pipeline" : "Local",
+              "Run ID": process.env.GITHUB_RUN_ID || "Local Run",
+              "Commit ID": process.env.GITHUB_SHA || "N/A"
+          }
+      }
     }],
     ["list"],
     ["json", { outputFile: "reports/test-results.json" }],
