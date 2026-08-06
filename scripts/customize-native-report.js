@@ -42,7 +42,7 @@ try {
       </a>
     `;
     
-    monoHtml = monoHtml.replace('<body>', \`<body>\\n\${floatingBtn}\`);
+    monoHtml = monoHtml.replace('<body>', `<body>\n${floatingBtn}`);
     fs.writeFileSync(monocartPath, monoHtml);
     console.log('Successfully injected floating button into Monocart report.');
   } else {
