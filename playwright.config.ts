@@ -20,10 +20,12 @@ export default defineConfig({
               "Project": "Playwright E2E Framework",
               "Environment": process.env.CI ? "CI Pipeline" : "Local",
               "Run ID": process.env.GITHUB_RUN_ID || "Local Run",
-              "Commit ID": process.env.GITHUB_SHA || "N/A"
+              "Commit ID": process.env.GITHUB_SHA || "N/A",
+              "Deep Debug Report": "<a href='./playwright-report/index.html' target='_blank' style='color: #4F46E5; font-weight: bold;'>Open Native Report ↗</a>"
           }
       }
     }],
+    ["html", { open: "never" }],
     ["list"],
     ["json", { outputFile: "reports/test-results.json" }],
     ["junit", { outputFile: "reports/junit-results.xml" }],
