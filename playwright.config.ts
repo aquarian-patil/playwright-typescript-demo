@@ -11,7 +11,11 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : 4,
   reporter: [
-    ["html", { open: "never" }],
+    ["monocart-reporter", { 
+      name: "Playwright Enterprise QA Dashboard",
+      outputFile: "./monocart-report/index.html",
+      theme: "dark",
+    }],
     ["list"],
     ["json", { outputFile: "reports/test-results.json" }],
     ["junit", { outputFile: "reports/junit-results.xml" }],
