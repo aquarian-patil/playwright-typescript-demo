@@ -19,7 +19,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : 4,
   reporter: [
     ["monocart-reporter", { 
-      name: "Playwright Enterprise QA Dashboard",
+      name: "Playwright Enterprise QA Dashboard <a href='./playwright-report/index.html' target='_blank' style='margin-left: 15px; font-size: 14px; color: #82aaff; background: #1e1e2e; padding: 4px 10px; border-radius: 4px; border: 1px solid #82aaff; text-decoration: none;'>View Deep Debug Report ↗</a>",
       outputFile: "./monocart-report/index.html",
       theme: "dark"
     }],
