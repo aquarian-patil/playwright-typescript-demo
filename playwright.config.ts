@@ -2,6 +2,13 @@ import { defineConfig, devices } from "@playwright/test";
 
 export default defineConfig({
   testDir: "./tests",
+  metadata: {
+    "Project": "Playwright E2E Framework",
+    "Environment": process.env.CI ? "CI Pipeline" : "Local",
+    "Run ID": process.env.GITHUB_RUN_ID || "Local Run",
+    "Commit ID": process.env.GITHUB_SHA || "N/A",
+    "Deep Debug Report": "<a href='./playwright-report/index.html' target='_blank' style='color: #4F46E5; font-weight: bold;'>Open Native Report ↗</a>"
+  },
   timeout: 120 * 1000,
   expect: {
     timeout: 15000,
@@ -14,16 +21,7 @@ export default defineConfig({
     ["monocart-reporter", { 
       name: "Playwright Enterprise QA Dashboard",
       outputFile: "./monocart-report/index.html",
-      theme: "dark",
-      customData: {
-          metadata: {
-              "Project": "Playwright E2E Framework",
-              "Environment": process.env.CI ? "CI Pipeline" : "Local",
-              "Run ID": process.env.GITHUB_RUN_ID || "Local Run",
-              "Commit ID": process.env.GITHUB_SHA || "N/A",
-              "Deep Debug Report": "<a href='./playwright-report/index.html' target='_blank' style='color: #4F46E5; font-weight: bold;'>Open Native Report ↗</a>"
-          }
-      }
+      theme: "dark"
     }],
     ["html", { open: "never" }],
     ["list"],
