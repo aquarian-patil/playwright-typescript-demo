@@ -53,6 +53,7 @@ jobs:
         run: |
           node scripts/customize-native-report.js
           mv playwright-report monocart-report/
+          touch monocart-report/.nojekyll
 
       - name: Upload HTML report
         if: always()
@@ -69,6 +70,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: monocart-report
+          force_orphan: true
 
       - name: Generate HTML Email Body
         if: always()
