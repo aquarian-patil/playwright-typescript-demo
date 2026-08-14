@@ -85,6 +85,6 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: "Playwright Automation Report"
-          to: nithin.patil@gmail.com, guhan.patil@gmail.com, swethagyhan8@gmail.com, guhanpatil8@gmail.com
+          to: ${{ secrets.NOTIFICATION_EMAILS }}
           from: Playwright Bot
           html_body: file://email-body.html
